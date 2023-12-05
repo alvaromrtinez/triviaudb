@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "343024947857",
+    "project_id": "triviaudb",
+    "storage_bucket": "triviaudb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343024947857:android:890c212b92d0b830dfa530",
+        "android_client_info": {
+          "package_name": "com.gatonaranja.triviaudb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSAinRIqMF-j7E75jN4bJY2AIuz-9oe9M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

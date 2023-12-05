@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.TriviaUdb" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="dialog1" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowMinWidthMinor">85%</item>
+        <item name="android:windowAnimationStyle">@style/anim1</item>
+    </style>
+
+    <style name="anim1">
+        <item name="android:windowEnterAnimation">@anim/slide_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_scale_out</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TriviaUdb" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+</resources>

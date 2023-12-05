@@ -1,0 +1,472 @@
+<resources>
+    <string name="app_name">Trivia UDB</string>
+    <string name="tv_question_String">¿Preguntas?</string>
+    <string name="tv_countdown_String">00</string>
+    <string name="btn_db_String">DB</string>
+    <string name="btn_dbz_String">DBZ</string>
+    <string name="btn_dbgt_String">DBGT</string>
+    <string name="btn_dbs_String">DBS</string>
+    <string name="tv_shame_String">¡Que pena!</string>
+    <string name="tv_almost_String">¡Casi lo logras!</string>
+    <string name="tv_congrats_String">¡Felicidades!</string>
+    <string name="tv_results_String">¡Has completado el test!</string>
+    <string name="tv_sentenceOne_String">¡Sigue intentandolo guerrero!</string>
+    <string name="tv_sentenceTwo_String">¡Vamos guerrero! Puedes hacerlo mejor</string>
+    <string name="tv_sentenceThree_String">¡Así se hace guerrero z!</string>
+    <string name="tv_results2_String">Estos son tus resultados: </string>
+    <string name="tv_correctas_String">Respuestas correctas: </string>
+    <string name="tv_incorrectas_String">Respuestas incorrectas: </string>
+    <string name="btn_results_String">Volver al menú</string>
+    <string name="tv_answer_String">Respuesta:</string>
+    <string name="tv_answertxt_String">AQUI VA LA RESPUESTA:</string>
+    <string name="btn_ag_String">Jugar</string>
+    <string name="btn_smg_String">Modo Historia (prox)</string>
+    <string name="btn_htp_String">¿Cómo Jugar?</string>
+    <string name="btn_menu_String">Menú</string>
+    <string name="btn_continue_String">Continuar</string>
+    <string name="tv_abouttitle_String">Acerca de</string>
+    <string name="btn_storymode_String">Modo Historia </string>
+    <string name="tv_abouttext_String">TriviaUDB es un juego de preguntas y repuestas acerca de uno de los animes más famosos de la historia. ¡Pon a prueba tus conocimientos y descubre que tan fan de esta serie eres!
+    TriviaUDB es un juego no oficial hecho por fans, diviértete y comparte con tus amigos.</string>
+    <string name="tv_creditstitle_String">Créditos de los Iconos</string>
+    <string name="tv_creditstext_String">De: www.freepik.es</string>
+    <string name="tv_policytitle_String">Política de Privacidad</string>
+    <string name="tv_policytext_String"></string>
+    <string name="tv_instructionstitle_String">Instrucciones</string>
+    <string name="tv_instructionstext_String">Instrucciones</string>
+    <string name="tv_config_String">Configuración</string>
+    <string name="tv_language_String">Idioma</string>
+    <string name="tv_spanish_String">Español</string>
+    <string name="tv_english_String">Inglés</string>
+    <string name="tv_sound_String">Sonido</string>
+    <string name="tv_music_String">Musica</string>
+    <string name="tv_fx_String">Efectos</string>
+    <string name="tv_stats_title_String">Estadísticas</string>
+    <string name="tv_record_String">Mejor resultado</string>
+    <string name="tv_correctasDos_String">Respuestas correctas </string>
+    <string name="tv_incorrectasDos_String">Respuestas incorrectas </string>
+    <string name="tv_backtoMenuTitle_String">¿Seguro que deseas salir? </string>
+    <string name="tv_backtoMenuText_String">Perderas todo el progreso actual </string>
+    <string name="btn_backtoMenuYes_String">Sí</string>
+    <string name="btn_backtoMenuCancel_String">Cancelar</string>
+
+    <string name="que1_String">"¿Inicialmente en que obra literaria se basó la serie?"</string>
+    <string name="que1_op1_String">"Viaje al Oeste"</string>
+    <string name="que1_op2_String">"Bandidos del Pantano"</string>
+    <string name="que1_op3_String">"El romance de los Tres Reinos"</string>
+    <string name="que1_op4_String">"Sueño en el Pabellón Rojo"</string>
+    <string name="que1_feedback_String">"La historia y los personajes de Dragon Ball están inspirados en parte por la popular novela china Viaje al Oeste, a pesar de que difieren de la novela rápidamente."</string>
+
+    <string name="que2_String">"¿Cómo se conocen Gokú y Bulma?"</string>
+    <string name="que2_op1_String">"Son amigos de la infancia"</string>
+    <string name="que2_op2_String">"Son vecinos"</string>
+    <string name="que2_op3_String">"Bulma lo atropella con su auto"</string>
+    <string name="que2_op4_String">"Asistieron a la misma escuela"</string>
+    <string name="que2_feedback_String">"Gokú, un niño huérfano pero fuerte que vive solo en el Monte Paoz, y Bulma, una adolescente de 16 años, se conocen cuando ella lo atropella mientras conduce por el Monte Paoz."</string>
+
+    <string name="que3_String">"¿Qué funcion tiene el Radar del Dragón?"</string>
+    <string name="que3_op1_String">"Llamar a los Guerreros Z"</string>
+    <string name="que3_op2_String">"Localizar las Esferas del Dragón"</string>
+    <string name="que3_op3_String">"Llamar a Bulma"</string>
+    <string name="que3_op4_String">"Localizar Dragones"</string>
+    <string name="que3_feedback_String">"El Radar del Dragón, es un radar que ayuda a buscar las siete legendarias Esferas del Dragón. Fue creado por Bulma y es mencionado desde el primer capítulo de la serie."</string>
+
+    <string name="que4_String">"¿Las Esferas del Dragón se utilizan para?"</string>
+    <string name="que4_op1_String">"Teletransportarse"</string>
+    <string name="que4_op2_String">"Conceder uno o varios deseos"</string>
+    <string name="que4_op3_String">"Destruir enemigos poderosos"</string>
+    <string name="que4_op4_String">"Viajar en el tiempo"</string>
+    <string name="que4_feedback_String">"Cuando se reúnen se utilizan para invocar a un dragón que concede uno o varios deseos. Esta invocación hace que el cielo del planeta donde se activen se nuble y oscurezca."</string>
+
+    <string name="que5_String">"¿Cuál es la esfera que posee Pilaf al inicio de DB?"</string>
+    <string name="que5_op1_String">"4 Estrellas"</string>
+    <string name="que5_op2_String">"7 Estrellas"</string>
+    <string name="que5_op3_String">"6 Estrellas"</string>
+    <string name="que5_op4_String">"1 Estrella"</string>
+    <string name="que5_feedback_String">"Pilaf decidió emprender por primera vez, la búsqueda de las esferas del dragón, para pedirle a Shen Long ser el rey absoluto del mundo. En su primera aparición en la serie, se nos muestra que posee la esfera de 1 estrella."</string>
+
+    <string name="que6_String">"¿Cómo consiguen Bulma y Gokú su tercer esfera del dragón?"</string>
+    <string name="que6_op1_String">"Fue un regalo del Maestro Roshi"</string>
+    <string name="que6_op2_String">"Tuvieron que pelear con Pilaf"</string>
+    <string name="que6_op3_String">"La encontraron en la cima de una montaña"</string>
+    <string name="que6_op4_String">"La compraron en una tienda de antiguedades"</string>
+    <string name="que6_feedback_String">"Bulma nota que tiene una Esfera del Dragón (la de 3 estrellas), y le pide al Maestro Roshi que se la otorgue como un premio por haber ayudado a Tortuga."</string>
+
+    <string name="que7_String">"¿Cuál es el nombre que recibe la escuela del maestro Roshi?"</string>
+    <string name="que7_op1_String">"Escuela del Lobo"</string>
+    <string name="que7_op2_String">"Escuela de la Grulla"</string>
+    <string name="que7_op3_String">"Escuela de la Tortuga"</string>
+    <string name="que7_op4_String">"Escuela del Dragón"</string>
+    <string name="que7_feedback_String">"La Escuela de la Tortuga es una de las escuelas de artes marciales, fundada por el Maestro Roshi. Los estudiantes 'estrella' fueron Gokú, Krilin y Yamcha."</string>
+
+    <string name="que8_String">¿Quién fue el creador del Kamehameha?</string>
+    <string name="que8_op1_String">Maestro Roshi</string>
+    <string name="que8_op2_String">Abuelo Gohan</string>
+    <string name="que8_op3_String">Gokú</string>
+    <string name="que8_op4_String">Maestro Tsuru</string>
+    <string name="que8_feedback_String">"Fue creada años antes del inicio de la serie por el Maestro Roshi, quien requirió de un arduo entrenamiento de 50 años para dominarla. Años después una nueva generación perfeccionaría dicha técnica, en especial Gokú."</string>
+
+    <string name="que9_String">"¿De qué color es la nube voladora?"</string>
+    <string name="que9_op1_String">"Verde"</string>
+    <string name="que9_op2_String">"Naranja"</string>
+    <string name="que9_op3_String">"Amarilla"</string>
+    <string name="que9_op4_String">"Rosa"</string>
+    <string name="que9_feedback_String">"Es una simple nube de color amarillo que sirve como medio de transporte para aquel que pueda utilizarla. Solamente las personas de corazón puro pueden subirse a ella, y quien no cumpla este requisito la traspasará como una nube común."</string>
+
+    <string name="que10_String">"¿Cuáles son las bases del entrenamiento del Maestro Roshi?"</string>
+    <string name="que10_op1_String">"Hay que trabajar"</string>
+    <string name="que10_op2_String">"Hay que aprender"</string>
+    <string name="que10_op3_String">"Hay que jugar"</string>
+    <string name="que10_op4_String">"Todas las anteriores son correctas"</string>
+    <string name="que10_feedback_String">“Hay que trabajar, hay que aprender, hay que comer, hay que descansar y también hay que jugar. Esas son las bases del entrenamiento del maestro Roshi para tener una buena condición.”"</string>
+
+    <string name="que11_String">"¿En un principio que deseo quería Bulma que Shenlong le concediera?"</string>
+    <string name="que11_op1_String">"Vida eterna"</string>
+    <string name="que11_op2_String">"Crecer"</string>
+    <string name="que11_op3_String">"Riqueza"</string>
+    <string name="que11_op4_String">"Suministro infinito de fresas"</string>
+    <string name="que11_feedback_String">"En un principio Bulma le pediría a Shen Long que le otorgara un suministro infinito de fresas."</string>
+
+    <string name="que12_String">"¿Quién es en realidad Jackie Chun?"</string>
+    <string name="que12_op1_String">"Maestro Roshi"</string>
+    <string name="que12_op2_String">"Abuelo Gohan"</string>
+    <string name="que12_op3_String">"Tao Pai Pai"</string>
+    <string name="que12_op4_String">"Maestro Shen"</string>
+    <string name="que12_feedback_String"> "En verdad, el personaje de "Jackie Chun" es simplemente el Maestro Roshi con una peluca. Para mostrar a sus alumnos, Gokú y Krillin, que a pesar de lo fuertes que se habían vuelto, todavía hay muchos guerreros en el mundo que son más poderosos que ellos."</string>
+
+    <string name="que13_String">"¿Quién es el líder de la pandilla de Pilaf?"</string>
+    <string name="que13_op1_String">"Pilaf"</string>
+    <string name="que13_op2_String">"Mai"</string>
+    <string name="que13_op3_String">"Shu"</string>
+    <string name="que13_op4_String">"Gokú"</string>
+    <string name="que13_feedback_String">"La pandilla de Pilaf es un grupo dirigido por Pilaf que trata de obtener las Esferas del Dragón. Ellos fueron los primeros villanos principales de la serie en aparecer, siendo incapaces de obtener la victoria hasta DB GT. "</string>
+
+    <string name="que14_String">"¿Qué premio se otorga al ganador del Torneo de las Artes Marciales?"</string>
+    <string name="que14_op1_String">"Una medalla"</string>
+    <string name="que14_op2_String">"Una esfera del dragón"</string>
+    <string name="que14_op3_String">"Una fortuna"</string>
+    <string name="que14_op4_String">"Se le concede un deseo"</string>
+    <string name="que14_feedback_String">"Además del titulo de Campeon del Torneo de las Artes Marciales, el ganador del torneo recibe una considerable cantidad de 500,000 zenis(más tarde incrementada a un millón de zenis) como premio."</string>
+
+    <string name="que15_String">"¿Quién fue la unica participante femenina en instancias finales del Torneo de las Artes Marciales no.21?"</string>
+    <string name="que15_op1_String">"Mai"</string>
+    <string name="que15_op2_String">"Launch"</string>
+    <string name="que15_op3_String">"Lan-Fan"</string>
+    <string name="que15_op4_String">"Milk"</string>
+    <string name="que15_feedback_String">"Lan-Fan llegó a los cuartos de final de la 21ª edición del Torneo Mundial de las Artes Marciales, siendo la única competidora femenina en esa instancia."</string>
+
+    <string name="que16_String">"¿Qué pensaba hacer el participante Nam con el dinero del torneo?"</string>
+    <string name="que16_op1_String">"Comprar un auto"</string>
+    <string name="que16_op2_String">"Comprar una nave espacial"</string>
+    <string name="que16_op3_String">"Comprar una mansión"</string>
+    <string name="que16_op4_String">"Comprar agua"</string>
+    <string name="que16_feedback_String">"Su objetivo en el torneo fue ganar el dinero y así salvar la escasez de agua que sufría su pueblo. Al perder su combate contra Gokú, Jackie Chun le regaló a Nam el agua que necesitaba, ya que este no sabía que en la ciudad era gratis."</string>
+
+    <string name="que17_String">"¿A que especie pertenece Giran?"</string>
+    <string name="que17_op1_String">"Demonios"</string>
+    <string name="que17_op2_String">"Dinosaurios"</string>
+    <string name="que17_op3_String">"Animales"</string>
+    <string name="que17_op4_String">"Dragones"</string>
+    <string name="que17_feedback_String">"Giran es un gira (una especie de guerrero dinosaurio) y fue uno de los ocho finalistas que asistió y participó en la 21° Edición del Torneo Mundial de las Artes Marciales, donde llegaría a cuartos de finales y lucharía contra Gokú."</string>
+
+    <string name="que18_String">"¿Cómo consiguio Nam el agua para su pueblo?"</string>
+    <string name="que18_op1_String">"No la consiguio"</string>
+    <string name="que18_op2_String">"Opto por robarla"</string>
+    <string name="que18_op3_String">"Decidio comprarla"</string>
+    <string name="que18_op4_String">"Fue un regalo"</string>
+    <string name="que18_feedback_String">"Al perder su combate contra Gokú, Jackie Chun le regaló a Nam el agua que necesitaba, ya que este no sabía que en la ciudad era gratis."</string>
+
+    <string name="que19_String">"¿Quien fue el ganador del enfrentamiento entre Jackie Chun y Yamcha?"</string>
+    <string name="que19_op1_String">"Yamcha"</string>
+    <string name="que19_op2_String">"Fue un empate"</string>
+    <string name="que19_op3_String">"Jackie Chun"</string>
+    <string name="que19_op4_String">"El combate fue interrumpido"</string>
+    <string name="que19_feedback_String">Jackie Chun esquiva con una voltereta el "RogaFufuKen" de Yamcha, apareciendo delante de el, diciéndole que le ofrecerá una refrescante brisa, para luego darle un golpe de aire con el que Yamcha sale del tatami."</string>
+
+    <string name="que20_String">"¿Quién es el campeón del 21° Torneo de las Artes Marciales?"</string>
+    <string name="que20_op1_String">"Gokú"</string>
+    <string name="que20_op2_String">"Jackie Chun"</string>
+    <string name="que20_op3_String">"Bruce Lee"</string>
+    <string name="que20_op4_String">"Krilin"</string>
+    <string name="que20_feedback_String">"El ganador de esta competición fue Jackie Chun, quien se enfrentó a su discípulo Gokú, y para evitar que su pupilo se convirtiera en el mono gigante Ozaru, lo derrotó con un kamehameha en su máxima potencia."</string>
+
+    <string name="que21_String">"¿Quién fue el primer hombre en subir a la nube voladora?"</string>
+    <string name="que21_op1_String">"Yamcha"</string>
+    <string name="que21_op2_String">"Gokú"</string>
+    <string name="que21_op3_String">"Nam"</string>
+    <string name="que21_op4_String">"Krilin"</string>
+    <string name="que21_feedback_String">"En el capítulo 29 de DB, Nam se convirtio en el primer hombre en subir a la nube voladora, palabras dichas por el mismo Gokú."</string>
+
+    <string name="que22_String">"¿Cuál es el objetivo de la Patrulla Roja?"</string>
+    <string name="que22_op1_String">"Construir los mejores automóviles"</string>
+    <string name="que22_op2_String">"Dominar el mundo"</string>
+    <string name="que22_op3_String">"Eliminar a la raza humana"</string>
+    <string name="que22_op4_String">"Conquistar el universo"</string>
+    <string name="que22_feedback_String">"La Patrulla Roja es una organización militar que tiene como objetivo conquistar al mundo con la ayuda de las esferas del dragón. Gokú se cruza con este ejército ya que el también estaba reuniendo las esferas con sus amigos."</string>
+
+    <string name="que23_String">"¿Quién destruyo la Fortaleza Voladora de Pilaf"</string>
+    <string name="que23_op1_String">"El Maestro Roshi"</string>
+    <string name="que23_op2_String">"La Patrulla Roja"</string>
+    <string name="que23_op3_String">"Krilin"</string>
+    <string name="que23_op4_String">"Gokú"</string>
+    <string name="que23_feedback_String">"La fortaleza del vuelo fue destruida cuando el Coronel Silver y sus soldados la derribaron debido a que Pilaf poseía una Esferas del Dragón y el Coronel pretendía hacerse con ella."</string>
+
+    <string name="que24_String">"¿Cuál es el nombre del Androide No.8?"</string>
+    <string name="que24_op1_String">"Ricardo"</string>
+    <string name="que24_op2_String">"Mario"</string>
+    <string name="que24_op3_String">"Octavio"</string>
+    <string name="que24_op4_String">"Arturo"</string>
+    <string name="que24_feedback_String">"El Androide Número 8, quien lleva el nombre de Octavio como le fue sugerido por Gokú, es un androide creado por el Dr. Maki Gero y el Dr. Flappé como una de las armas secretas del Ejército de la Patrulla Roja."</string>
+
+    <string name="que25_String">¿Para qué sirven las semillas del ermitaño?"</string>
+    <string name="que25_op1_String">"Para curar las heridas físicas"</string>
+    <string name="que25_op2_String">"Para lograr una nueva transformación"</string>
+    <string name="que25_op3_String">"Para curar una enfermedad"</string>
+    <string name="que25_op4_String">"Para aumentar el Ki"</string>
+    <string name="que25_feedback_String">"Son usadas por el Maestro Karin para curar en un segundo a personas casi muertas al instante, son mucho más efectivas que las mejores medicinas del mundo."</string>
+
+    <string name="que26_String">"¿Quién fue el creador del Taiyoken?"</string>
+    <string name="que26_op1_String">"Tenshinhan"</string>
+    <string name="que26_op2_String">"Maestro Tsuru"</string>
+    <string name="que26_op3_String">"Gokú"</string>
+    <string name="que26_op4_String">"Maestro Roshi"</string>
+    <string name="que26_feedback_String">"Fue creada por el Maestro Tsuru y fue utilizada por primera vez por Ten Shin Han durante la saga de la 22° edición del Torneo de Artes Marciales."</string>
+
+    <string name="que27_String">"¿En que mounstro está basado del Androide No.8?"</string>
+    <string name="que27_op1_String">"Drácula"</string>
+    <string name="que27_op2_String">"Frankenstein"</string>
+    <string name="que27_op3_String">"Hombre lobo"</string>
+    <string name="que27_op4_String">"Momia"</string>
+    <string name="que27_feedback_String">"Físicamente, el Androide No.8 es una réplica del monstruo de Frankenstein, con un físico desproporcionado en la anchura de los hombros y una cabeza extremadamente rectangular."</string>
+
+    <string name="que28_String">"¿Quién es el lider de la Patrulla Roja?"</string>
+    <string name="que28_op1_String">"Coronel Silver"</string>
+    <string name="que28_op2_String">"Comandante White"</string>
+    <string name="que28_op3_String">"General Blue"</string>
+    <string name="que28_op4_String">"Comandante Red"</string>
+    <string name="que28_feedback_String">"El Comandante Red es el fundador y líder supremo del Ejército del Listón Rojo, mantuvo su liderazgo durante mucho tiempo hasta que Goku se encargo de derrotar y desmantelar su base."</string>
+
+    <string name="que29_String">¿Con cuál técnica derrotó Gokú a Piccoro Daimakú?</string>
+    <string name="que29_op1_String">Kamehameha</string>
+    <string name="que29_op2_String">Puño del Dragón</string>
+    <string name="que29_op3_String">Genkidama</string>
+    <string name="que29_op4_String">Puño del Mono gigante</string>
+    <string name="que29_feedback_String"> Gokú herido reúne todas sus fuerzas y sale disparado del suelo con un Kamehameha y golpea a Piccoro tan fuerte que le atraviesa el pecho dejandolo al borde de la muerte."</string>
+
+    <string name="que30_String">"¿Quién resultó ganador en el Torneo de Artes Marciales No.22?"</string>
+    <string name="que30_op1_String">"Gokú"</string>
+    <string name="que30_op2_String">"Krilin"</string>
+    <string name="que30_op3_String">"Piccoro"</string>
+    <string name="que30_op4_String">"Ten Shin Han"</string>
+    <string name="que30_feedback_String">"Ten Shin Han se proclamó campeón de la 22° edición del Torneo de las Artes Marciales al vencer a su rival Gokú."</string>
+
+    <string name="que31_String">"¿Cuál es el nombre del primer hijo de Gokú?"</string>
+    <string name="que31_op1_String">"Goten"</string>
+    <string name="que31_op2_String">"Gohan"</string>
+    <string name="que31_op3_String">"Trunks"</string>
+    <string name="que31_op4_String">"Gotenks"</string>
+    <string name="que31_feedback_String">"Gohan es el primer hijo de Gokú y Milk, es un mestizo entre saiyajin y  terrícola. Apareció por primera vez en el episodio 1 de DBZ."</string>
+
+    <string name="que32_String">"¿Quién es el hermano de Gokú?"</string>
+    <string name="que32_op1_String">"Paragus"</string>
+    <string name="que32_op2_String">"Raditz"</string>
+    <string name="que32_op3_String">"Turles"</string>
+    <string name="que32_op4_String">"Bardock"</string>
+    <string name="que32_feedback_String">"Raditz es el hijo de Bardock y Gine, y hermano mayor de Gokú. Él es uno de los pocos saiyajin que sobrevivieron a la destrucción del Planeta Vegeta, y formaba parte del equipo de Vegeta."</string>
+
+    <string name="que33_String">"¿Quiénes son los Saiyajin?"</string>
+    <string name="que33_op1_String">"Alienígenas"</string>
+    <string name="que33_op2_String">"Humanos entrenados en artes marciales"</string>
+    <string name="que33_op3_String">"Dioses"</string>
+    <string name="que33_op4_String">"Humanos con superpoderes"</string>
+    <string name="que33_feedback_String">"Los saiyajin son una de las razas de guerreros más fuertes que existe en la serie; habitaban el Planeta Vegeta hasta su destrucción a manos de Freezer, el emperador del espacio."</string>
+
+    <string name="que34_String">"¿Cuál es el verdadero nombre de Gokú?"</string>
+    <string name="que34_op1_String">"Gokú"</string>
+    <string name="que34_op2_String">"Bardock"</string>
+    <string name="que34_op3_String">"Kakaroto"</string>
+    <string name="que34_op4_String">"Wukong"</string>
+    <string name="que34_feedback_String">" Su nombre real y de nacimiento es Kakaroto. Originalmente enviado a la Tierra con la misión de conquistarla. Pero, el caer por un barranco le proporcionó un brutal golpe que alteró su memoria y anuló todos los instintos violentos de su especie."</string>
+
+    <string name="que35_String">"¿Quién se sacrifica en la Saga Saiyajin para salvar a Gohan?"</string>
+    <string name="que35_op1_String">"Piccoro"</string>
+    <string name="que35_op2_String">"Krilin"</string>
+    <string name="que35_op3_String">"Chaoz"</string>
+    <string name="que35_op4_String">"Yamcha"</string>
+    <string name="que35_feedback_String">"Nappa dispara su ataque a Gohan, pero Piccolo salta frente del chico y recibe el impacto, aunque sigue de pie cuando se aclará del humo, luego de unos segundos caé al suelo mortalmente herido."</string>
+
+    <string name="que36_String">"¿Cómo se llama el Planeta natal de los Saiyajin?"</string>
+    <string name="que36_op1_String">"Namek"</string>
+    <string name="que36_op2_String">"Yardrat"</string>
+    <string name="que36_op3_String">"Vegeta"</string>
+    <string name="que36_op4_String">"Metamoru"</string>
+    <string name="que36_feedback_String">"También conocido como Planeta Planta, es el punto en donde habitan todos los saiyajin que se han conocido a lo largo de la serie. Es un planeta rocoso y está localizado en el Universo 7."</string>
+
+    <string name="que37_String">"¿Cómo se llama la técnica que Piccoro utiliza para derrotar a Raditz?"</string>
+    <string name="que37_op1_String">"Kaio-Ken"</string>
+    <string name="que37_op2_String">"Makankosappo"</string>
+    <string name="que37_op3_String">"Kamehameha"</string>
+    <string name="que37_op4_String">"Genkidama"</string>
+    <string name="que37_feedback_String">"Piccoro usó por primera vez el Makankosappo en su batalla contra Raditz, fallando en su primer intento. Luego la volvería usar en la misma batalla, logrando acertarle, pero en el acto muere Gokú."</string>
+
+    <string name="que38_String">"¿Cuál era objetivo de Nappa y Vegeta en la Tierra?"</string>
+    <string name="que38_op1_String">"Encontrar y usar las esferas del dragón"</string>
+    <string name="que38_op2_String">"Construir una colonia"</string>
+    <string name="que38_op3_String">"Destruir el planeta"</string>
+    <string name="que38_op4_String">"Conquistar y vender el planeta"</string>
+    <string name="que38_feedback_String">" Vegeta y Nappa invaden la Tierra en un intento de usar las esferas del dragón para obtener la inmortalidad. Luego, a través de múltiples batallas, Vegeta comienza a luchar junto a Gokú para defender la Tierra."</string>
+
+    <string name="que39_String">"¿Qué son los Saibaiman?"</string>
+    <string name="que39_op1_String">"Humanos sintéticos"</string>
+    <string name="que39_op2_String">"Demonios"</string>
+    <string name="que39_op3_String">"Androides"</string>
+    <string name="que39_op4_String">"Extraterrestres"</string>
+    <string name="que39_feedback_String">"Los Saibaman son criaturas extraterrestres que crecen mediante una semilla plantada en la tierra. Antes de la utilización, este embrión se retienen en un líquido bastante peculiar."</string>
+
+    <string name="que40_String">"¿Qué es un Saiyajin de clase baja?"</string>
+    <string name="que40_op1_String">"Un Saiyajin sin honor"</string>
+    <string name="que40_op2_String">"Un Saiyajin sin poderes"</string>
+    <string name="que40_op3_String">"Un Saiyajin que nacio con un bajo poder de pelea"</string>
+    <string name="que40_op4_String">"Un Saiyajin de alto rango "</string>
+    <string name="que40_feedback_String">"Los guerreros de clase baja puede que, al nacer hayan sido inferiores, pero con un buen entrenamiento pueden llegar a superar a los de clase alta, un buen ejemplo es Gokú o Bardock."</string>
+
+    <string name="que41_String">"¿Cuál es el Planeta natal de Piccoro?"</string>
+    <string name="que41_op1_String">"Tierra"</string>
+    <string name="que41_op2_String">"Sadala"</string>
+    <string name="que41_op3_String">"Namekusei"</string>
+    <string name="que41_op4_String">"Kaio"</string>
+    <string name="que41_feedback_String">"Namekusei es el planeta natal de el Piccoro Original, Dende, Moori y otros más destacados en la serie. Namekusei es de un color verde, con algunos tonos de marrones muy claros. Su especie nativa son los Namekuseín. "</string>
+
+    <string name="que42_String">"¿Cuál es una diferencia de las Esferas Namekianas a las de la Tierra?"</string>
+    <string name="que42_op1_String">"Conceden hasta tres deseos"</string>
+    <string name="que42_op2_String">"Pueden conceder el mismo deseo más de una vez</string>
+    <string name="que42_op3_String">"Se invocan pronunciando una contraseña"</string>
+    <string name="que42_op4_String">"Todas las anteriores son correctas"</string>
+    <string name="que42_feedback_String">"El invocador tiene la obligación de pronunciar una contraseña para poder convocar al Dios Dragón, Porunga. Tiene la capacidad de conceder tres deseos, que son algo diferentes y más poderosos que los de Shen Long. Por ejemplo, puede conceder el mismo deseo muchas veces."</string>
+
+    <string name="que43_String">"¿Quién es Dende?"</string>
+    <string name="que43_op1_String">"Un niño terrícola"</string>
+    <string name="que43_op2_String">"Un niño namekuseí"</string>
+    <string name="que43_op3_String">"Un soldado de Freezer"</string>
+    <string name="que43_op4_String">"El hijo de Piccoro"</string>
+    <string name="que43_feedback_String">" Es un pequeño namekuseí, que vivía en el poblado de Moori, junto a su hermano Scargo y otros tantos de su especie. Es el hijo 108 del Gran Patriarca y posteriormente Dios de la Tierra, sustituyendo a Kami-sama."</string>
+
+    <string name="que44_String">"¿Con quién se fusiona Piccoro en la Saga de Freezer?"</string>
+    <string name="que44_op1_String">"Muuri"</string>
+    <string name="que44_op2_String">"Maima"</string>
+    <string name="que44_op3_String">"Nail"</string>
+    <string name="que44_op4_String">"Kami-sama"</string>
+    <string name="que44_feedback_String">"Luego de que Piccoro fuera revivido y enviado a Namek, se encuentra con Nail, quien revela que siendo ambos Namekianos de raza guerrera pueden fusionarse. Piccoro acepta, logrando aumentar su fuerza y dandole pelea a Freezer en su segunda forma. "</string>
+
+    <string name="que45_String">"¿Quiénes son las Fuerzas Especiales Ginyu?"</string>
+    <string name="que45_op1_String">"Un grupo de guerreros de élite"</string>
+    <string name="que45_op2_String">"Un grupo de bailarines profesionales"</string>
+    <string name="que45_op3_String">"Un equipo de peleadores marciales"</string>
+    <string name="que45_op4_String">"Un grupo de cientificos espaciales"</string>
+    <string name="que45_feedback_String">"La Fuerzas Especiales Ginyu son un equipo de guerreros de élite. A diferencia de los otros que sirven al imperio galáctico de Freezer, son profesionales, independientes y grandemente favorecidos por el tirano, en lugar de esclavos o sirvientes."</string>
+
+    <string name="que46_String">"¿Quién derrota a Rikum?"</string>
+    <string name="que46_op1_String">"Vegeta"</string>
+    <string name="que46_op2_String">"Freezer"</string>
+    <string name="que46_op3_String">"Piccoro"</string>
+    <string name="que46_op4_String">"Gokú"</string>
+    <string name="que46_feedback_String">"Rikum decide utilizar su técnica especial, pero antes de terminar Gokú le da un simple codazo en el pecho y este cae a el suelo vencido, (en realidad fue un golpe muy  fuerte, pero al ser muy rápido el rastreador no lo detectó) el único que pudo ver el movimiento fue Vegeta."</string>
+
+    <string name="que47_String">"¿En que animal se transforma el Capitán Ginyu?"</string>
+    <string name="que47_op1_String">"Un Pájaro"</string>
+    <string name="que47_op2_String">"Un Conejo"</string>
+    <string name="que47_op3_String">"Una Rana"</string>
+    <string name="que47_op4_String">"Un Pez"</string>
+    <string name="que47_feedback_String">"Ginyu espera el momento oportuno para cambiar el cuerpo con Vegeta, mientras en el suelo junto a Gokú hay una rana. Tras un fuerte destello Gokú lanzó la rana y se interpuso, por lo tanto Ginyu intercambio de cuerpo con dicho animal."</string>
+
+    <string name="que48_String">"¿Cuál es el nivel de pelea de Freezer en su Segunda Forma?"</string>
+    <string name="que48_op1_String">"120,000,000"</string>
+    <string name="que48_op2_String">"2,120,000"</string>
+    <string name="que48_op3_String">"530,000"</string>
+    <string name="que48_op4_String">"1,000,000"</string>
+    <string name="que48_feedback_String">"En su segunda forma, la estatura de la primera forma es duplicada. No presenta muchas diferencias con respecto a la primera, además de haber un incremento de musculatura y tamaño, su poder de pelea se eleva al millón de unidades. "</string>
+
+    <string name="que49_String">"¿Cómo fueron transportados todos los presentes en Namek a la Tierra?"</string>
+    <string name="que49_op1_String">"Por medio de la nave de Freezer"</string>
+    <string name="que49_op2_String">"Por medio de un deseo"</string>
+    <string name="que49_op3_String">"Por medio de la nave de Bulma "</string>
+    <string name="que49_op4_String">"Por medio de la  técnica de la transportación"</string>
+    <string name="que49_feedback_String">"Gokú le pide al Gran Patriarca y a Kaio-sama que pidan transportar a todos a la Tierra a excepción de él y Freezer. El Gran Patriarca se comunica con Dende que estaba cerca de Polunga para pedir el deseo."</string>
+
+    <string name="que50_String">"¿En dónde se encuentra Gokú cuando se transforma por primera vez en Súper Saiyajin?"</string>
+    <string name="que50_op1_String">"Planeta Tierra"</string>
+    <string name="que50_op2_String">"Planeta Kaio"</string>
+    <string name="que50_op3_String">"Planeta Namek"</string>
+    <string name="que50_op4_String">"Planeta Vegeta"</string>
+    <string name="que50_feedback_String">"Gokú se encontraba en Namek peleando contra Freezer al momento de convertirse por primera vez en Súper Saiyajin."</string>
+
+    <string name="que51_String">"¿Cuál es el trabajo de Gokú al inicio de DBS?"</string>
+    <string name="que51_op1_String">"Conductor de Autobús"</string>
+    <string name="que51_op2_String">"Agricultor de Zanahorias"</string>
+    <string name="que51_op3_String">"Agricultor de Rábanos"</string>
+    <string name="que51_op4_String">"Trabajador de la construcción"</string>
+    <string name="que51_feedback_String">"4 años después de la derrota de Majin Buu, la paz ha regresado a la Tierra. Milk quiere que Goku logre conseguir un trabajo, por lo que comienza a trabajar como agricultor de rábanos, aunque él realmente lo que quiere es seguir entrenando."</string>
+
+    <string name="que52_String">"¿Cuál es el regalo de bodas que recibió Videl por parte de Goten y Trunks?"</string>
+    <string name="que52_op1_String">"Una esfera del Dragón"</string>
+    <string name="que52_op2_String">"Una botella de agua"</string>
+    <string name="que52_op3_String">"Una mascota"</string>
+    <string name="que52_op4_String">"Un collar de flores"</string>
+    <string name="que52_feedback_String">"Goten quiere darle a Videl un regalo de bodas. Él le pide un consejo a Trunks y ambos salen a buscar un regalo. Deciden conseguirle una botella de agua de manantial que se puede utilizar para hacer su piel suave. "</string>
+
+    <string name="que53_String">"¿Quién encerro al Antiguo Supremo Kaio-sama en la Espada Z?"</string>
+    <string name="que53_op1_String">"Babidi"</string>
+    <string name="que53_op2_String">"Bills"</string>
+    <string name="que53_op3_String">"Whis"</string>
+    <string name="que53_op4_String">"Bibidi"</string>aaa
+    <string name="que53_feedback_String">"Una vez cada mil años, los Supremos Kaio-sama y los Dioses de la Destrucción se juntan en sus reinos. Debido a una discusión sin importancia, Bills encerró al Antiguo Supremo Kaio-sama en la Espada Z."</string>
+
+    <string name="que54_String">"¿Cuántos Saiyajines de corazón puro se necesitan para invocar al Dios Super Saiyajin?"</string>
+    <string name="que54_op1_String">"Seis"</string>
+    <string name="que54_op2_String">"Cuatro"</string>
+    <string name="que54_op3_String">"Cinco"</string>
+    <string name="que54_op4_String">"Siete"</string>
+    <string name="que54_feedback_String">"En efecto, se requieren de 6 saiyajines de estado puro para hacer posible la transformación del Dios Super Saiyajin."</string>
+
+    <string name="que55_String">"¿Quién fue el primer Super Saiyajín?"</string>
+    <string name="que55_op1_String">"Broly</string>
+    <string name="que55_op2_String">"Bardock"</string>
+    <string name="que55_op3_String">"Yamoshi"</string>
+    <string name="que55_op4_String">"Gokú"</string>
+    <string name="que55_feedback_String">"Yamoshi fue un saiyajín poseedor original de la transformación del Super Saiyajin, del cual se pensó que era solo un mito."</string>
+
+    <string name="que56_String">"¿Porqué razón pelean Buu y Bills en la batalla de los Dioses?"</string>
+    <string name="que56_op1_String">"Por ser el más fuerte"</string>
+    <string name="que56_op2_String">"Por la tierra"</string>
+    <string name="que56_op3_String">"Por un pudin"</string>
+    <string name="que56_op4_String">"Por antiguos conflictos"</string>
+    <string name="que56_feedback_String">"Cuando Whis le dice a Bills sobre un manjar llamado pudin, Bills va en busca del alimento, los cuales están en manos de Buu. Bills le pide uno pero éste no acepta y se los come todos, causando la ira del Dios de la Destrucción."</string>
+
+    <string name="que57_String">"¿Quién es el científico que crea a los androides?"</string>
+    <string name="que57_op1_String">"Dr. Wheelo"</string>
+    <string name="que57_op2_String">"Dr. Brief"</string>
+    <string name="que57_op3_String">"Dr. Slump"</string>
+    <string name="que57_op4_String">"Dr. Gero"</string>
+    <string name="que57_feedback_String">"El Dr.Maki Gero, es el creador de los androides y del bio androide Cell y del Súper Androide 17 que construyó con el Dr. Myu."</string>
+
+    <string name="que58_String">"¿Quién se convierte en el objetivo de venganza de los androides?"</string>
+    <string name="que58_op1_String">"Vegeta"</string>
+    <string name="que58_op2_String">"Gokú"</string>
+    <string name="que58_op3_String">"Piccoro"</string>
+    <string name="que58_op4_String">"Krilin"</string>
+    <string name="que58_feedback_String">"El Dr. Gero es un antiguo miembro de la Patrulla Roja, una organización militar que Gokú derrotó cuando era niño. Gero se obsesionó con la idea de vengarse de Gokú, por lo cual creo androides muy poderosos."</string>
+
+    <string name="que59_String">"¿Cuál era el nombre de la Androide 18 cuando era humana?"</string>
+    <string name="que59_op1_String">"Lazuli"</string>
+    <string name="que59_op2_String">"Paris"</string>
+    <string name="que59_op3_String">"Bra"</string>
+    <string name="que59_op4_String">"Maron"</string>
+    <string name="que59_feedback_String">"Su nombre de humano es Lazuli, luego de ser modificada por el Dr. Gero pasó a ser referida como la Androide Número 18."</string>
+
+    <string name="que60_String">"¿Cuál es el nombre de la forma inicial de Cell?"</string>
+    <string name="que60_op1_String">"Forma perfecta"</string>
+    <string name="que60_op2_String">"Forma semi perfecta"</string>
+    <string name="que60_op3_String">"Forma imperfecta"</string>
+    <string name="que60_op4_String">"Forma super perfecta"</string>
+    <string name="que60_feedback_String">"Cell en su primera forma tiene una apariencia similar a una mantis religiosa humanoide, posee una coraza en su cabeza con dos cuernos horizontales, y una larga cola."</string>
+</resources>

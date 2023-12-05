@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TriviaUDB</string>
+    <string name="tv_question_String">Question?</string>
+    <string name="tv_countdown_String">00</string>
+    <string name="btn_db_String">DB</string>
+    <string name="btn_dbz_String">DBZ</string>
+    <string name="btn_dbgt_String">DBGT</string>
+    <string name="btn_dbs_String">DBS</string>
+    <string name="tv_results_String">¡You have finished!</string>
+    <string name="tv_shame_String">¡What a shame!</string>
+    <string name="tv_almost_String">¡You almost do it!</string>
+    <string name="tv_congrats_String">¡Congratulations!</string>
+    <string name="tv_sentenceOne_String">¡Keep trying fighter!</string>
+    <string name="tv_sentenceTwo_String">¡Go ahead fighter! You can do it better</string>
+    <string name="tv_sentenceThree_String">"¡That's it Z Fighter!"</string>
+    <string name="tv_results2_String">"These are your results:"</string>
+    <string name="tv_correctas_String">Right Answers: </string>
+    <string name="tv_incorrectas_String">Wrong Answers: </string>
+    <string name="btn_results_String">Back to menu</string>
+    <string name="tv_answer_String">Answer:</string>
+    <string name="tv_answertxt_String">Here goes the Answer:</string>
+    <string name="btn_ag_String">Play</string>
+    <string name="btn_smg_String">Story Mode (SOON)</string>
+    <string name="btn_htp_String">How to play?</string>
+    <string name="btn_menu_String">Menu</string>
+    <string name="btn_continue_String">Next</string>
+    <string name="btn_storymode_String">Story Mode</string>
+    <string name="tv_abouttitle_String">About</string>
+    <string name="tv_abouttext_String">Trivia DBU is a quiz game about of one the most famous anime series de una las series más famosas. Hecha por fans y para fans.</string>
+    <string name="tv_creditstitle_String">Icon Credits</string>
+    <string name="tv_creditstext_String">From: www.freepik.es</string>
+    <string name="tv_policytitle_String">Privacy Policy</string>
+    <string name="tv_policytext_String"></string>
+    <string name="tv_instructionstitle_String">Instructions</string>
+    <string name="tv_instructionstext_String">Instructions</string>
+    <string name="tv_config_String">Settings</string>
+    <string name="tv_language_String">Language</string>
+    <string name="tv_spanish_String">Spanish</string>
+    <string name="tv_english_String">English</string>
+    <string name="tv_sound_String">Volume</string>
+    <string name="tv_music_String">Music</string>
+    <string name="tv_fx_String">Sounds</string>
+    <string name="tv_stats_title_String">Stats</string>
+    <string name="tv_record_String">Best Score</string>
+    <string name="tv_correctasDos_String">Correct Answers </string>
+    <string name="tv_incorrectasDos_String">Incorrect Answers </string>
+    <string name="tv_backtoMenuTitle_String">¿Do you want to exit? </string>
+    <string name="tv_backtoMenuText_String">"You'll lose your current progress"</string>
+    <string name="btn_backtoMenuYes_String">Yes</string>
+    <string name="btn_backtoMenuCancel_String">Cancel</string>
+
+    <string name="que1_String">"What literary work is the series based on?"</string>
+    <string name="que1_op1_String">"Journey to the West"</string>
+    <string name="que1_op2_String">"Water Margin"</string>
+    <string name="que1_op3_String">"Romance of the Three Kingdoms"</string>
+    <string name="que1_op4_String">"Dream of the Red Chamber"</string>
+    <string name="que1_feedback_String">"The story and characters of the serie were partly inspired by the Chinese folk novel Journey to the West, though they diverge from the novel very quickly."</string>
+
+    <string name="que2_String">"How do Goku and Bulma met?"</string>
+    <string name="que2_op1_String">"They are childhood friends"</string>
+    <string name="que2_op2_String">"They are Neighboors"</string>
+    <string name="que2_op3_String">"He gets run over by Bulma in her car"</string>
+    <string name="que2_op4_String">"They went to the same school"</string>
+    <string name="que2_feedback_String">"On his way home, dragging the fish, he gets run over by a teenage girl named Bulma in her car. Goku has never seen a car before and attacks, thinking that it is a monster; he picks up the car and throws it into the distance."</string>
+
+    <string name="que3_String">"What is the function of the Dragon Radar?"</string>
+    <string name="que3_op1_String">"Call the Z Fighters"</string>
+    <string name="que3_op2_String">"Find the Dragon Balls"</string>
+    <string name="que3_op3_String">"Call to Bulma"</string>
+    <string name="que3_op4_String">"Find Dragons"</string>
+    <string name="que3_feedback_String">"The Dragon Radar is a tracking device that makes finding the Dragon Balls more efficient, compared to conventional methods."</string>
+
+    <string name="que4_String">"What are dragon balls used for?"</string>
+    <string name="que4_op1_String">"Teleport"</string>
+    <string name="que4_op2_String">"Grant one or many wishes"</string>
+    <string name="que4_op3_String">"Defeat powerful enemies"</string>
+    <string name="que4_op4_String">"Time travel"</string>
+    <string name="que4_feedback_String">"The dragon balls ared used for grant one or many whishes."</string>
+
+    <string name="que5_String">"What is the dragon ball that Pilaf owns at the beginning of DB?"</string>
+    <string name="que5_op1_String">"4 Stars"</string>
+    <string name="que5_op2_String">"7 Stars"</string>
+    <string name="que5_op3_String">"6 Stars"</string>
+    <string name="que5_op4_String">"1 Star"</string>
+    <string name="que5_feedback_String">"At the beginning of DB, Emperor's Pilaf first discovers the One-Star Dragon Ball and finds out he needs to collect all seven Dragon Balls."</string>
+
+    <string name="que6_String">"How do Bulma and Goku get their third dragon ball?"</string>
+    <string name="que6_op1_String">"It was a gift from Master Roshi"</string>
+    <string name="que6_op2_String">"They'd to fight Pilaf"</string>
+    <string name="que6_op3_String">"They found it at the top of a Mountain"</string>
+    <string name="que6_op4_String">"They bougth it at an antique shop"</string>
+    <string name="que6_feedback_String">"Bulma demands a prize from Roshi, despite Turtle's comments that Goku was the only one who helped him. She immediately notices the Dragon Ball hanging from Master Roshi's neck and asks for it."</string>
+
+    <string name="que7_String">"What is the name of Master Roshi's school?"</string>
+    <string name="que7_op1_String">"Wolf School"</string>
+    <string name="que7_op2_String">"Crane School"</string>
+    <string name="que7_op3_String">"Turtle School"</string>
+    <string name="que7_op4_String">"Dragon School"</string>
+    <string name="que7_feedback_String"> "The Turtle School is a Martial Arts school founded by Master Roshi which presumably continues the teachings of Roshi's former sensei, Master Mutaito."</string>
+
+    <string name="que8_String">Who invented the Kamehameha?</string>
+    <string name="que8_op1_String">Master Roshi</string>
+    <string name="que8_op2_String">Grandpa Gohan</string>
+    <string name="que8_op3_String">Goku</string>
+    <string name="que8_op4_String">Master Shen</string>
+    <string name="que8_feedback_String"> "It was invented by Master Roshi by practicing for fifty years spanning pre-Dragon Ball. By drawing his latent ki into the palms of his hands, Roshi is able to expel an explosive beam of ki energy."</string>
+
+    <string name="que9_String">"What is the Flying Nimbus color?"</string>
+    <string name="que9_op1_String">"Green"</string>
+    <string name="que9_op2_String">"Orange"</string>
+    <string name="que9_op3_String">"Yellow"</string>
+    <string name="que9_op4_String">"Pink"</string>
+    <string name="que9_feedback_String">"The Flying Nimbus is a magical, yellow cloud that serves as a way of transportation. Goku obtains the Nimbus from Master Roshi as compensation for saving Turtle."</string>
+
+    <string name="que10_String">"What are  the principles of Master Roshi training?"</string>
+    <string name="que10_op1_String">"Work hard"</string>
+    <string name="que10_op2_String">"Study well"</string>
+    <string name="que10_op3_String">"Sleep plenty"</string>
+    <string name="que10_op4_String">"All are correct"</string>
+    <string name="que10_feedback_String">"Work hard, Study well and eat and sleep plenty… that’s the turtle hermit way to learn!”"</string>
+
+    <string name="que11_String">"¿What was Bulma's original wish?"</string>
+    <string name="que11_op1_String">Immortality</string>
+    <string name="que11_op2_String">Grow up</string>
+    <string name="que11_op3_String">Richness</string>
+    <string name="que11_op4_String">Lifetime supply of strawberries</string>
+    <string name="que11_feedback_String"> Back in original DB, Bulma reveals that she wants to wish for a boyfriend. But when Yamcha catches her eye, she changes priority to wishing for a lifetime supply of strawberries.</string>
+
+    <string name="que12_String">"Who is really Jackie Chun?"</string>
+    <string name="que12_op1_String">Master Roshi</string>
+    <string name="que12_op2_String">Grandpa Gohan</string>
+    <string name="que12_op3_String">Mercenary Tao</string>
+    <string name="que12_op4_String">Master Shen</string>
+    <string name="que12_feedback_String">""Jackie Chun"  is simply Master Roshi wearing a wig. To show his pupils, Goku and Krillin, that as strong as they'd become, there are still plenty warriors out there in the world who are more powerful than they are."</string>
+
+    <string name="que13_String">"Who is the leader of the Pilaf gang?"</string>
+    <string name="que13_op1_String">"Pilaf"</string>
+    <string name="que13_op2_String">"Mai"</string>
+    <string name="que13_op3_String">"Shu"</string>
+    <string name="que13_op4_String">"Goku"</string>
+    <string name="que13_feedback_String">"The Pilaf Gang is a group run by Emperor Pilaf that tries to obtain the Dragon Balls for Pilaf, so he can rule Earth."</string>
+
+    <string name="que14_String">"What prize is awarded to the winner of the Martial Arts Tournament? "</string>
+    <string name="que14_op1_String">"A medal"</string>
+    <string name="que14_op2_String">"A dragon ball"</string>
+    <string name="que14_op3_String">" A large fortune"</string>
+    <string name="que14_op4_String">"A wish-granting opportunity"</string>
+    <string name="que14_feedback_String">"Besides the title of World Martial Arts Champion, the winner of the tournament receives the considerable amount of 500,000 Zeni (later increased to ten million Zeni) as a prize."</string>
+
+    <string name="que15_String">"Who was the only female fighter in the 21st World Tournament?"</string>
+    <string name="que15_op1_String">"Mai"</string>
+    <string name="que15_op2_String">"Launch"</string>
+    <string name="que15_op3_String">"Ranfan"</string>
+    <string name="que15_op4_String">"Chi-Chi"</string>
+    <string name="que15_feedback_String">"Ranfan was one of the eight fighters to make it to the quarter finals in the 21st World Tournament and the only female fighter."</string>
+
+    <string name="que16_String">"What was the Nam participant planning to do with the tournament money?"</string>
+    <string name="que16_op1_String">"Buy a car"</string>
+    <string name="que16_op2_String">"Buy a spaceship"</string>
+    <string name="que16_op3_String">"Buy a mansion"</string>
+    <string name="que16_op4_String">"Buy some water"</string>
+    <string name="que16_feedback_String">"His motivation to compete in the Tournament was in order to win the prize money so that he could use it to purchase and provide a water supply for his village that was suffering from drought, showing the caring and generous side of Nam. "</string>
+
+    <string name="que17_String">"What species does Giran belong to?"</string>
+    <string name="que17_op1_String">"Devils"</string>
+    <string name="que17_op2_String">"Dinosaurs"</string>
+    <string name="que17_op3_String">"Animals"</string>
+    <string name="que17_op4_String">"Dragons"</string>
+    <string name="que17_feedback_String">"Giran is a Giras(a race of pterodactyl-like monster beasts. ) that entered the 21st World Martial Arts Tournament where he fought Goku."</string>
+
+    <string name="que18_String">"How did Nam get water for his people?"</string>
+    <string name="que18_op1_String">"He didn't ge it"</string>
+    <string name="que18_op2_String">"He decided to steal it"</string>
+    <string name="que18_op3_String">"He purchase it"</string>
+    <string name="que18_op4_String">"It was a gift"</string>
+    <string name="que18_feedback_String">"Being defeated, however, he is unable to get the money to buy water and decides to leave. Master Roshi reads his mind and gets acquainted with his intentions. He then gives him a capsule so that he can store water from a well."</string>
+
+    <string name="que19_String">"Who was the winner of the battle between Jackie Chun and Yamcha?"</string>
+    <string name="que19_op1_String">"Yamcha"</string>
+    <string name="que19_op2_String">"It was a draw"</string>
+    <string name="que19_op3_String">"Jackie Chun"</string>
+    <string name="que19_op4_String">"The battle was discontinued"</string>
+    <string name="que19_feedback_String">"Jackie Chun counterattacks by sweeping his hand toward Yamcha creating a massive gust of wind. The force of the wind knocks Yamcha out of bounds, though Jackie Chun did not actually strike him."</string>
+
+    <string name="que20_String">"Who is the champion of the 21st World Martial Arts Tournament?"</string>
+    <string name="que20_op1_String">"Goku"</string>
+    <string name="que20_op2_String">"Jackie Chun"</string>
+    <string name="que20_op3_String">"Bruce Lee"</string>
+    <string name="que20_op4_String">"Krilin"</string>
+    <string name="que20_feedback_String">"Jackie Chun won the title of champion at the 21st Tenkaichi Budokai. He fougth against Goku, and to avoid that he turns into Ozaru. He deafeat him with a max power kamehameha."</string>
+
+    <string name="que21_String">"Who was the first human to ride the Flying Nimbus?"</string>
+    <string name="que21_op1_String">"Yamcha"</string>
+    <string name="que21_op2_String">"Goku"</string>
+    <string name="que21_op3_String">"Nam"</string>
+    <string name="que21_op4_String">"Krilin"</string>
+    <string name="que21_feedback_String">"Nam was able to ride the Flying Nimbus when Goku rescued him in the episode "The Roaming Lake"."</string>
+
+    <string name="que22_String">"What is the Red Ribbon's goal?"</string>
+    <string name="que22_op1_String">"Build the best cars"</string>
+    <string name="que22_op2_String">"World domination"</string>
+    <string name="que22_op3_String">"Erase humanity"</string>
+    <string name="que22_op4_String">"Conquer the universe"</string>
+    <string name="que22_feedback_String">"The goal of the Red Ribbon Army is to use any means necessary to obtain the Dragon Balls and wish for world domination."</string>
+
+    <string name="que23_String">"Who destroys Pilaf's Flying Fortress?"</string>
+    <string name="que23_op1_String">"The Master Roshi"</string>
+    <string name="que23_op2_String">"The Red Ribbon"</string>
+    <string name="que23_op3_String">"Krilin"</string>
+    <string name="que23_op4_String">"Goku"</string>
+    <string name="que23_feedback_String">"The Flying Fortress was destroyed when Colonel Silver and his soldiers shot it down in a heated desert in order to get the Dragon Ball."</string>
+
+    <string name="que24_String">"What is  Android 8's name?"</string>
+    <string name="que24_op1_String">"Franky"</string>
+    <string name="que24_op2_String">"Flappe"</string>
+    <string name="que24_op3_String">"Eighter"</string>
+    <string name="que24_op4_String">"Suno"</string>
+    <string name="que24_feedback_String">"Android 8, who goes by the name Eighter as suggested by Goku, is Dr. Gero's eighth Android creation. He is designed to serve the Red Ribbon Army but is seen as faulty because of his good-spirited nature."</string>
+
+    <string name="que25_String">"What do senzu beans do?"</string>
+    <string name="que25_op1_String">"To heal physical harm"</string>
+    <string name="que25_op2_String">"To get a power up"</string>
+    <string name="que25_op3_String">"To heal a sickness or a disease"</string>
+    <string name="que25_op4_String">"To increase the ki"</string>
+    <string name="que25_feedback_String">"The Senzu Bean's restoring properties mend and heal all physical harm to person."</string>
+
+    <string name="que26_String">"Who invented the Taiyoken?"</string>
+    <string name="que26_op1_String">"Tenshinhan"</string>
+    <string name="que26_op2_String">"Master Shen"</string>
+    <string name="que26_op3_String">"Goku"</string>
+    <string name="que26_op4_String">"Master Roshi"</string>
+    <string name="que26_feedback_String"> "The Taiyōken is a technique developed by the Tsuru-Sen Style Dōjō, and was used exclusively by them before Son Gokū memorized the technique and became the first non-Tsuru-Sen Style Dōjō fighter to employ it."</string>
+
+    <string name="que27_String"> "What monster is Android No. 8 based on?"</string>
+    <string name="que27_op1_String">"Dracula"</string>
+    <string name="que27_op2_String">"Frankenstein"</string>
+    <string name="que27_op3_String">"Werewolf"</string>
+    <string name="que27_op4_String">"Mummy"</string>
+    <string name="que27_feedback_String"> "Android 8 is a android that takes on the form of a large, stocky man resembling Frankenstein's monster - whom he is presumably based of."</string>
+
+    <string name="que28_String">"Who is the Red Ribbon leader?"</string>
+    <string name="que28_op1_String">"Colonel Silver"</string>
+    <string name="que28_op2_String">"General White"</string>
+    <string name="que28_op3_String">"General Blue"</string>
+    <string name="que28_op4_String">"Commander Red"</string>
+    <string name="que28_feedback_String">"Commander Red, is the commander-in-chief of the most feared and ruthless militaristic crime organization: the Red Ribbon Army."</string>
+
+    <string name="que29_String">"What move did Goku use to defeat Piccolo?"</string>
+    <string name="que29_op1_String">"Kamehameha"</string>
+    <string name="que29_op2_String">"Dragon Fist"</string>
+    <string name="que29_op3_String">"Spirit Bomb"</string>
+    <string name="que29_op4_String">"Penetrate!"</string>
+    <string name="que29_feedback_String">"Goku fired a reverse, one-handed Kamehameha and propelled himself at full-speed towards King Piccolo, punching him clean through his torso–an attack that would become known as "Penetrate!" punch."</string>
+
+    <string name="que30_String">Who won the 22nd Tenkaichi Budokai?</string>
+    <string name="que30_op1_String">"Goku"</string>
+    <string name="que30_op2_String">"Krilin"</string>
+    <string name="que30_op3_String">"Piccoro"</string>
+    <string name="que30_op4_String">"Tenshinhan"</string>
+    <string name="que30_feedback_String">"Tenshinhan was the champion of the 22nd Tenkaichi Budokai. As a student of Tsuru School martial arts, he found a rival in Goku after the latter defeated his fellow disciple and the brother of Tsurusennin, the assassin Taopaipai."</string>
+
+    <string name="que31_String">"Who is Goku's first son?"</string>
+    <string name="que31_op1_String">"Goten"</string>
+    <string name="que31_op2_String">"Gohan"</string>
+    <string name="que31_op3_String">"Trunks"</string>
+    <string name="que31_op4_String">"Gotenks"</string>
+    <string name="que31_feedback_String">"Gohan is a half-breed Saiyan and one of the most prominent characters in the series. He is the elder son of the series primary protagonist Goku and his wife Chi-Chi. He is named after Goku's adoptive grandfather, Gohan."</string>
+
+    <string name="que32_String">"Who is Goku's brother?"</string>
+    <string name="que32_op1_String">"Paragus"</string>
+    <string name="que32_op2_String">"Raditz"</string>
+    <string name="que32_op3_String">"Turles"</string>
+    <string name="que32_op4_String">"Bardock"</string>
+    <string name="que32_feedback_String">"Raditz is a mid-class Saiyan warrior, the older brother of Goku and the eldest son of Bardock and Gine. He is one of the few remaining full-blooded Saiyans left alive after his homeworld was destroyed. He is the first antagonist in DBZ."</string>
+
+    <string name="que33_String">"Who are the Saiyans?"</string>
+    <string name="que33_op1_String">"Aliens"</string>
+    <string name="que33_op2_String">"Humans trained in martial arts"</string>
+    <string name="que33_op3_String">"Gods"</string>
+    <string name="que33_op4_String">"Humans with superpowers"</string>
+    <string name="que33_feedback_String">"Saiyans are a race of extraterrestrials. They are a naturally aggressive warrior race who were supposedly striving to be the strongest in the universe. Nearly all of the Saiyans from Universe 7 were obliterated by Frieza."</string>
+
+    <string name="que34_String">"What is Goku's real name?"</string>
+    <string name="que34_op1_String">"Goku"</string>
+    <string name="que34_op2_String">"Bardock"</string>
+    <string name="que34_op3_String">"Kakarot"</string>
+    <string name="que34_op4_String">"Wukong"</string>
+    <string name="que34_feedback_String">"Goku, born Kakarot. Originally sent to Earth by his parents as an infant. A head injury at an early age altered Goku's memory, ridding him of his initial destructive nature and allowing him to grow up to become one of Earth's greatest defenders."</string>
+
+    <string name="que35_String">"Who did sacrifice himself to save Gohan in the Saiyan Saga?"</string>
+    <string name="que35_op1_String">"Piccolo"</string>
+    <string name="que35_op2_String">"Krilin"</string>
+    <string name="que35_op3_String">"Chaoz"</string>
+    <string name="que35_op4_String">"Yamcha"</string>
+    <string name="que35_feedback_String">"Nappa fires a Bomber DX at Gohan, but Piccolo jumps in front of the boy and takes the blast to himself. Though he is still standing when the smoke clears, he falls to the ground, mortally wounded. "</string>
+
+    <string name="que36_String">"What is the name of the Saiyan's home planet?"</string>
+    <string name="que36_op1_String">"Namek"</string>
+    <string name="que36_op2_String">"Yardrat"</string>
+    <string name="que36_op3_String">"Vegeta"</string>
+    <string name="que36_op4_String">"Metamor"</string>
+    <string name="que36_feedback_String">"Planet Vegeta, formerly known as Planet Plant, is the home planet of Goku, Vegeta, and all other native Saiyans, Tuffles and the Inhabitants of Plant in the Dragon Ball franchise."</string>
+
+    <string name="que37_String">"What is the name of the technique Piccolo uses to defeat Raditz?"</string>
+    <string name="que37_op1_String">"Kaio-Ken"</string>
+    <string name="que37_op2_String">"Makankosappo (Special Beam Cannon)"</string>
+    <string name="que37_op3_String">"Kamehameha"</string>
+    <string name="que37_op4_String">"Genkidama (Spirit Bomb)"</string>
+    <string name="que37_feedback_String">"Special Beam Cannon is a technique used by Piccolo and is one of his signature attacks. Piccolo uses the Special Beam Cannon in a battle for the first time in the battle against Raditz."</string>
+
+    <string name="que38_String">"What is Nappa and Vegeta's objective on Earth?"</string>
+    <string name="que38_op1_String">"Find and use the dragon balls"</string>
+    <string name="que38_op2_String">"Build a colony"</string>
+    <string name="que38_op3_String">"Destroy the planet"</string>
+    <string name="que38_op4_String">"Conquer and sell the planet"</string>
+    <string name="que38_feedback_String">"Raditz, relays Piccolo's explanation about Earth's Dragon Balls to Nappa and Vegeta in the hopes that they'll come to use the balls to revive him. Nappa does briefly consider wishing Raditz back to life, but Vegeta instead decides to use the balls for them to wish for immortality."</string>
+
+    <string name="que39_String">"Who are the Saibamen?"</string>
+    <string name="que39_op1_String">"Synthetic humans"</string>
+    <string name="que39_op2_String">"Demons"</string>
+    <string name="que39_op3_String">"Androids"</string>
+    <string name="que39_op4_String">"Aliens"</string>
+    <string name="que39_feedback_String">"Saibamen are green, humanoid creatures that grow from a planted seed placed in the ground. The bulbs are stored in a special liquid prior to their use by a Saiyan. They are considered part of the Alien race."</string>
+
+    <string name="que40_String">"What is a low-class Saiyan?"</string>
+    <string name="que40_op1_String">"A Saiyan without honor"</string>
+    <string name="que40_op2_String">"A Saiyan with no powers"</string>
+    <string name="que40_op3_String">"A Saiyan who born with a low power level"</string>
+    <string name="que40_op4_String">"A high-ranking Saiyan"</string>
+    <string name="que40_feedback_String">"Goku was considered a low class saiyan because he was born with a 'low' Power Level while Broly(non-canon) was born with a 'higher' Power Level. Considering Power level decides the class of a Saiyan then Adult Goku trumps Vegeta."</string>
+
+    <string name="que41_String">"What is Piccolo's birth Planet?"</string>
+    <string name="que41_op1_String">"Earth"</string>
+    <string name="que41_op2_String">"Sadala"</string>
+    <string name="que41_op3_String">"Namek</string>
+    <string name="que41_op4_String">"King Kai"</string>
+    <string name="que41_feedback_String">"Namek  is a planet in a trinary star system located at coordinates 9045XY within Universe 7. It is the home planet of Piccolo, Dende, and other Namekians."</string>
+
+    <string name="que42_String">"Which one is a difference between Namekian Dragon Balls and Earth Dragon Balls?"</string>
+    <string name="que42_op1_String">"They grant three wishes"</string>
+    <string name="que42_op2_String">"Can grant the same wish more than once"</string>
+    <string name="que42_op3_String">"They're summoned with a password"</string>
+    <string name="que42_op4_String">"All are correct"</string>
+    <string name="que42_feedback_String">"The summoner is required to utter a Namekian password in order to summon Porunga, Once he is summoned, he has the ability to grant three wishes, that are somewhat different in power to Shenron's wishes. For example, Porunga can grant the same wish more than once."</string>
+
+    <string name="que43_String">"Who is Dende?"</string>
+    <string name="que43_op1_String">"A Human Kid"</string>
+    <string name="que43_op2_String">"A Namekian Kid"</string>
+    <string name="que43_op3_String">"A Frieza Soldier"</string>
+    <string name="que43_op4_String">"Piccolo's Son"</string>
+    <string name="que43_feedback_String">"Dende is a Namekian with a unique gift that allows him to heal others. He is the 108th son of Grand Elder Guru. On Goku's request, Dende becomes the Earth's Guardian in Kami's place."</string>
+
+    <string name="que44_String">"Who does Piccoro merge with in Frieza Saga??"</string>
+    <string name="que44_op1_String">"Moori"</string>
+    <string name="que44_op2_String">"Maima"</string>
+    <string name="que44_op3_String">"Nail"</string>
+    <string name="que44_op4_String">"Kami"</string>
+    <string name="que44_feedback_String">"A newly resurrected Piccolo arrives on the planet and discovers the battered Namekian.  Nail asks Piccolo to fuse with him in order to increase his chances against Frieza. Piccolo eventually agrees. After they fuse, Piccolo's power level increases dramatically to the point of being even with that of Frieza's second form."</string>
+
+    <string name="que45_String">"Who are the Ginyu Force?"</string>
+    <string name="que45_op1_String">"An elite group of mercenaries"</string>
+    <string name="que45_op2_String">"A professional dancers group"</string>
+    <string name="que45_op3_String">"A martial arts team</string>
+    <string name="que45_op4_String">"A galactic scientifics group"</string>
+    <string name="que45_feedback_String">"The Ginyu Force are an elite group of mercenaries employed by Frieza to conquer planets as a part of his army. "</string>
+
+    <string name="que46_String">"Who deafeated Recoome?"</string>
+    <string name="que46_op1_String">"Vegeta"</string>
+    <string name="que46_op2_String">"Frieza"</string>
+    <string name="que46_op3_String">"Piccoro"</string>
+    <string name="que46_op4_String">"Goku"</string>
+    <string name="que46_feedback_String">"Goku effortlessly defeats the powerful Recoome in one blow to the midsection, thanks to his training in the ship. Gohan, Krillin, and Vegeta all marvel at Goku's extreme power."</string>
+
+    <string name="que47_String">"What animal does Captain Ginyu turn into?"</string>
+    <string name="que47_op1_String">"A Bird"</string>
+    <string name="que47_op2_String">"A Rabbit"</string>
+    <string name="que47_op3_String">"A Frog"</string>
+    <string name="que47_op4_String">"A Fish"</string>
+    <string name="que47_feedback_String">"Finally, Vegeta throws Ginyu into the air, where Ginyu prepares for the technique again. Goku, however, notices a nearby frog and throws it towards Vegeta as the beam approaches him. Therefore Ginyu changes his body with the animal."</string>
+
+    <string name="que48_String">"What is Freezer's power level in his Second Form?"</string>
+    <string name="que48_op1_String">"120,000,000"</string>
+    <string name="que48_op2_String">"2,120,000"</string>
+    <string name="que48_op3_String">"530,000"</string>
+    <string name="que48_op4_String">"1,000,000"</string>
+    <string name="que48_feedback_String">"Frieza destroys his own battle armor and transforms his slight, unassuming frame into that of a hulking monster. Boasting a Power Level of over one million, he displayed his ferocious strength by blowing up the area around him by simply raising his hand into the air!"</string>
+
+    <string name="que49_String">"How were everyone on Namek transported to Earth?"</string>
+    <string name="que49_op1_String">"By means of Freezer's ship"</string>
+    <string name="que49_op2_String">"By means of a wish"</string>
+    <string name="que49_op3_String">"By means of Bulma's ship"</string>
+    <string name="que49_op4_String">"By means of the transportation technique"</string>
+    <string name="que49_feedback_String">"King Kai telepathically contacts Grand Elder Guru and tells him of their plan to use Porunga's final wish to send everyone on Namek to Earth except for Frieza."</string>
+
+    <string name="que50_String">"Where is Goku when he does turn into Super Saiyan for the first time?"</string>
+    <string name="que50_op1_String">"Planet Earth"</string>
+    <string name="que50_op2_String">"King Kai's Planet"</string>
+    <string name="que50_op3_String">"Planet Namek"</string>
+    <string name="que50_op4_String">"Planet Vegeta"</string>
+    <string name="que50_feedback_String">"Goku was on Namek fighting Freezer when he first became Super Saiyajin."</string>
+
+    <string name="que51_String">"What is Goku's job an the beginning of DBS?"</string>
+    <string name="que51_op1_String">"Bus Driver"</string>
+    <string name="que51_op2_String">"Carrot Farmer"</string>
+    <string name="que51_op3_String">"Radish Farmer"</string>
+    <string name="que51_op4_String">"Construction Worker"</string>
+    <string name="que51_feedback_String">"Sometime has passed since the defeat of Kid Buu and Chi-Chi makes Goku get a job since the Ox-King has been running low on money to support them, so he starts working as a radish farmer, although he really wants to train. "</string>
+
+    <string name="que52_String">"What did Videl receive as a Wedding Present from Goten and Trunks?"</string>
+    <string name="que52_op1_String">"A dragon ball"</string>
+    <string name="que52_op2_String">"A bottle of water"</string>
+    <string name="que52_op3_String">"A pet"</string>
+    <string name="que52_op4_String">"A handmade necklace"</string>
+    <string name="que52_feedback_String">"Goten wants to give Videl a wedding present. He asks Trunks for advice and they go off searching for. They decide to get her a bottle of fresh spring water that they got right near a hot spring that can be used to make her skin soft."</string>
+
+    <string name="que53_String">"Who trapped Old Kai in the Z Sword?"</string>
+    <string name="que53_op1_String">"Babidi"</string>
+    <string name="que53_op2_String">"Beerus"</string>
+    <string name="que53_op3_String">"Whis"</string>
+    <string name="que53_op4_String">"Bibidi"</string>
+    <string name="que53_feedback_String">"Beerus and Old Kai got into an argument over some trifling thing and a certain short-tempered God of Destruction, sealed Old Kai away inside the Z Sword as it would not have been proper for him to destroy the Sacred World of the Kais itself."</string>
+
+    <string name="que54_String">"How many pure-hearted Saiyans are needed to summon the Super Saiyan God?"</string>
+    <string name="que54_op1_String">"Six"</string>
+    <string name="que54_op2_String">"Four"</string>
+    <string name="que54_op3_String">"Five"</string>
+    <string name="que54_op4_String">"Seven"</string>
+    <string name="que54_feedback_String">"It requires five righteous Saiyans to perform and a sixth Saiyan to channel the ritual and ki into, each as Super Saiyan."</string>
+
+    <string name="que55_String">"Who was the first Super Saiyan?"</string>
+    <string name="que55_op1_String">""</string>
+    <string name="que55_op2_String">""</string>
+    <string name="que55_op3_String">""</string>
+    <string name="que55_op4_String">""</string>
+    <string name="que55_feedback_String">"Yamoshi is an ancient Saiyan who could transform into a Super Saiyan long before Goku could. After his death, his spirit wandered in search of six pure-hearted Saiyans, to create the ceremony that would birth the first Super Saiyan God."</string>
+
+    <string name="que56_String">"Why do Buu and Bills fight in the Battle of the Gods?"</string>
+    <string name="que56_op1_String">"To be the strongest"</string>
+    <string name="que56_op2_String">"For the Earth"</string>
+    <string name="que56_op3_String">"For a Pudin"</string>
+    <string name="que56_op4_String">"For old problems"</string>
+    <string name="que56_feedback_String">" Whis informs Beerus that there is supposed to be some delicious custard pudding and that Majin Buu is currently eating some. Beerus politely asks Buu for one and Whis asks for two, but Buu refuses, stating he will eat them all himself."</string>
+
+    <string name="que57_String">"Who is the scientist who creates the androids?"</string>
+    <string name="que57_op1_String">"Dr. Wheelo"</string>
+    <string name="que57_op2_String">"Dr. Brief"</string>
+    <string name="que57_op3_String">"Dr. Slump"</string>
+    <string name="que57_op4_String">"Dr. Gero"</string>
+    <string name="que57_feedback_String">"Dr. Gero, the scientist that unleashed Androids 16 to 19 and Cell upon the world, was a relatively short-lived villain in DBZ."</string>
+
+    <string name="que58_String">"Who becomes the target of revenge by the androids in this saga?"</string>
+    <string name="que58_op1_String">"Vegeta"</string>
+    <string name="que58_op2_String">"Goku"</string>
+    <string name="que58_op3_String">"Piccolo"</string>
+    <string name="que58_op4_String">"Krilin"</string>
+    <string name="que58_feedback_String">"Dr. Gero is a former member of the Red Ribbon, a military organization that Goku defeated when he was a kid. Gero became obsessed with getting revenge on Goku and decided to use his scientific knowledge to create very powerful androids."</string>
+
+    <string name="que59_String">"What was the Android 18's name when she was human?"</string>
+    <string name="que59_op1_String">"Lazuli"</string>
+    <string name="que59_op2_String">"Paris"</string>
+    <string name="que59_op3_String">"Bra"</string>
+    <string name="que59_op4_String">"Maron"</string>
+    <string name="que59_feedback_String">"Lazuli was her name when she was human. Then, when she was modified she passed to be called Android Number 18."</string>
+
+    <string name="que60_String">"What is the name of Cell's initial form?"</string>
+    <string name="que60_op1_String">"Perfect Cell"</string>
+    <string name="que60_op2_String">"Semi-Perfect Cell"</string>
+    <string name="que60_op3_String">"Imperfect Cell"</string>
+    <string name="que60_op4_String">"Super Cell"</string>
+    <string name="que60_feedback_String">"In his Imperfect form, Cell has transitioned to walking upright and has a humanoid shape, but retains many insectoid features from his previous form, including his horns, beak-like mouth, three-toed feet, five-fingered hands and segmented armor. "</string>
+
+
+</resources>
