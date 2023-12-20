@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Trivia UDB</string>
+    <string name="app_name">Qué tanto sabes del UDB</string>
     <string name="tv_question_String">¿Preguntas?</string>
     <string name="tv_countdown_String">00</string>
     <string name="btn_db_String">DB</string>
@@ -10,8 +10,8 @@
     <string name="tv_almost_String">¡Casi lo logras!</string>
     <string name="tv_congrats_String">¡Felicidades!</string>
     <string name="tv_results_String">¡Has completado el test!</string>
-    <string name="tv_sentenceOne_String">¡Sigue intentandolo guerrero!</string>
-    <string name="tv_sentenceTwo_String">¡Vamos guerrero! Puedes hacerlo mejor</string>
+    <string name="tv_sentenceOne_String">¡Vámos, puedes hacerlo mejor</string>
+    <string name="tv_sentenceTwo_String">¡Casi lo logras, no te rindas!</string>
     <string name="tv_sentenceThree_String">¡Así se hace guerrero z!</string>
     <string name="tv_results2_String">Estos son tus resultados: </string>
     <string name="tv_correctas_String">Respuestas correctas: </string>
@@ -25,21 +25,24 @@
     <string name="btn_menu_String">Menú</string>
     <string name="btn_continue_String">Continuar</string>
     <string name="tv_abouttitle_String">Acerca de</string>
+    <string name="tv_aboutapptitle_String">Sobre la Aplicación</string>
     <string name="btn_storymode_String">Modo Historia </string>
-    <string name="tv_abouttext_String">TriviaUDB es un juego de preguntas y repuestas acerca de uno de los animes más famosos de la historia. ¡Pon a prueba tus conocimientos y descubre que tan fan de esta serie eres!
-    TriviaUDB es un juego no oficial hecho por fans, diviértete y comparte con tus amigos.</string>
+    <string name="tv_abouttext_String">¿Qué tanto sabes sobre el UDB? es un juego no oficial de preguntas y repuestas acerca de uno de los animes más famosos de la historia. ¡Pon a prueba tus conocimientos y descubre que tan fan de esta serie eres!
+    Diviértete y comparte con tus amigos.</string>
     <string name="tv_creditstitle_String">Créditos de los Iconos</string>
     <string name="tv_creditstext_String">De: www.freepik.es</string>
     <string name="tv_policytitle_String">Política de Privacidad</string>
-    <string name="tv_policytext_String"></string>
+    <string name="tv_policytext_String">https://gatonaranjaentmt.blogspot.com/2023/12/hmdykodbu-privacy-policy-en.html</string>
     <string name="tv_instructionstitle_String">Instrucciones</string>
-    <string name="tv_instructionstext_String">Instrucciones</string>
+    <string name="tv_instructionOne_String">•Tienes 30 segundos para responder cada pregunta.</string>
+    <string name="tv_instructionTwo_String">•Las preguntas aparecerán en orden aleatorio.</string>
+    <string name="tv_instructionThree_String">•Consigue el mayor puntaje posible en cada partida.</string>
     <string name="tv_config_String">Configuración</string>
     <string name="tv_language_String">Idioma</string>
     <string name="tv_spanish_String">Español</string>
     <string name="tv_english_String">Inglés</string>
     <string name="tv_sound_String">Sonido</string>
-    <string name="tv_music_String">Musica</string>
+    <string name="tv_music_String">Música</string>
     <string name="tv_fx_String">Efectos</string>
     <string name="tv_stats_title_String">Estadísticas</string>
     <string name="tv_record_String">Mejor resultado</string>
@@ -49,6 +52,11 @@
     <string name="tv_backtoMenuText_String">Perderas todo el progreso actual </string>
     <string name="btn_backtoMenuYes_String">Sí</string>
     <string name="btn_backtoMenuCancel_String">Cancelar</string>
+    <string name="tv_resumeText_String">En pausa</string>
+    <string name="btn_resume">Reanudar</string>
+    <string name="force_update_title">¡Actualización Disponible!</string>
+    <string name="force_update_description">Se le recomienda actualizar la aplicación para obtener el acceso a nuevas funciones y/o para la corrección de errores. ¡Con el fin de brindarle una mejor experiencia de juego! </string>
+    <string name="btn_update">Actualizar</string>
 
     <string name="que1_String">"¿Inicialmente en que obra literaria se basó la serie?"</string>
     <string name="que1_op1_String">"Viaje al Oeste"</string>
@@ -132,7 +140,7 @@
     <string name="que12_op2_String">"Abuelo Gohan"</string>
     <string name="que12_op3_String">"Tao Pai Pai"</string>
     <string name="que12_op4_String">"Maestro Shen"</string>
-    <string name="que12_feedback_String"> "En verdad, el personaje de "Jackie Chun" es simplemente el Maestro Roshi con una peluca. Para mostrar a sus alumnos, Gokú y Krillin, que a pesar de lo fuertes que se habían vuelto, todavía hay muchos guerreros en el mundo que son más poderosos que ellos."</string>
+    <string name="que12_feedback_String"> "Realmente el personaje de "Jackie Chun" es simplemente el Maestro Roshi con una peluca. Para mostrar a sus alumnos, Gokú y Krillin, que a pesar de lo fuertes que se habían vuelto, todavía hay muchos guerreros en el mundo que son más poderosos que ellos."</string>
 
     <string name="que13_String">"¿Quién es el líder de la pandilla de Pilaf?"</string>
     <string name="que13_op1_String">"Pilaf"</string>
@@ -204,7 +212,7 @@
     <string name="que22_op4_String">"Conquistar el universo"</string>
     <string name="que22_feedback_String">"La Patrulla Roja es una organización militar que tiene como objetivo conquistar al mundo con la ayuda de las esferas del dragón. Gokú se cruza con este ejército ya que el también estaba reuniendo las esferas con sus amigos."</string>
 
-    <string name="que23_String">"¿Quién destruyo la Fortaleza Voladora de Pilaf"</string>
+    <string name="que23_String">"¿Quién destruyo la Fortaleza Voladora de Pilaf?"</string>
     <string name="que23_op1_String">"El Maestro Roshi"</string>
     <string name="que23_op2_String">"La Patrulla Roja"</string>
     <string name="que23_op3_String">"Krilin"</string>
@@ -361,7 +369,7 @@
     <string name="que45_String">"¿Quiénes son las Fuerzas Especiales Ginyu?"</string>
     <string name="que45_op1_String">"Un grupo de guerreros de élite"</string>
     <string name="que45_op2_String">"Un grupo de bailarines profesionales"</string>
-    <string name="que45_op3_String">"Un equipo de peleadores marciales"</string>
+    <string name="que45_op3_String">"Un equipo de artistas marciales "</string>
     <string name="que45_op4_String">"Un grupo de cientificos espaciales"</string>
     <string name="que45_feedback_String">"La Fuerzas Especiales Ginyu son un equipo de guerreros de élite. A diferencia de los otros que sirven al imperio galáctico de Freezer, son profesionales, independientes y grandemente favorecidos por el tirano, en lugar de esclavos o sirvientes."</string>
 
@@ -391,7 +399,7 @@
     <string name="que49_op2_String">"Por medio de un deseo"</string>
     <string name="que49_op3_String">"Por medio de la nave de Bulma "</string>
     <string name="que49_op4_String">"Por medio de la  técnica de la transportación"</string>
-    <string name="que49_feedback_String">"Gokú le pide al Gran Patriarca y a Kaio-sama que pidan transportar a todos a la Tierra a excepción de él y Freezer. El Gran Patriarca se comunica con Dende que estaba cerca de Polunga para pedir el deseo."</string>
+    <string name="que49_feedback_String">"Gokú le pide al Gran Patriarca y a Kaio-sama que pidan transportar a todos a la Tierra a excepción de él y Freezer. El Gran Patriarca se comunica con Dende que estaba cerca de Porunga para pedir el deseo."</string>
 
     <string name="que50_String">"¿En dónde se encuentra Gokú cuando se transforma por primera vez en Súper Saiyajin?"</string>
     <string name="que50_op1_String">"Planeta Tierra"</string>
@@ -414,7 +422,7 @@
     <string name="que52_op4_String">"Un collar de flores"</string>
     <string name="que52_feedback_String">"Goten quiere darle a Videl un regalo de bodas. Él le pide un consejo a Trunks y ambos salen a buscar un regalo. Deciden conseguirle una botella de agua de manantial que se puede utilizar para hacer su piel suave. "</string>
 
-    <string name="que53_String">"¿Quién encerro al Antiguo Supremo Kaio-sama en la Espada Z?"</string>
+    <string name="que53_String">"¿Quién encerró al Antiguo Supremo Kaio-sama en la Espada Z?"</string>
     <string name="que53_op1_String">"Babidi"</string>
     <string name="que53_op2_String">"Bills"</string>
     <string name="que53_op3_String">"Whis"</string>
@@ -469,4 +477,12 @@
     <string name="que60_op3_String">"Forma imperfecta"</string>
     <string name="que60_op4_String">"Forma super perfecta"</string>
     <string name="que60_feedback_String">"Cell en su primera forma tiene una apariencia similar a una mantis religiosa humanoide, posee una coraza en su cabeza con dos cuernos horizontales, y una larga cola."</string>
+
+    <string name="que61_String">" ¿Qué transformación obtiene Gokú en su pelea contra Baby?"</string>
+    <string name="que61_op1_String">"Súper Saiyajin 3"</string>
+    <string name="que61_op2_String">"Súper Saiyajin Dios"</string>
+    <string name="que61_op3_String">"Súper Saiyajin 4"</string>
+    <string name="que61_op4_String">"Súper Saiyajin Blue"</string>
+    <string name="que61_feedback_String">" Gokú la obtuvo en un enfrentamiento contra  Baby Vegeta donde perdió el control y estuvo todo el tiempo inconsciente de lo que hacía. Tras ser calmado por Pan, alcanzó la fase Super Saiyan 4 como consecuencia de la transformación Ozaru dorado dominada."</string>
+
 </resources>

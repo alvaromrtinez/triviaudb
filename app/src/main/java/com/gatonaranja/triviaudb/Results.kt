@@ -36,9 +36,7 @@ class Results : AppCompatActivity() {
             savedLanguage = getLanguage("es")
         } catch (e: Exception) {
             e.printStackTrace()
-            val text = "NO SE RECUPERO EL IDIOMA"
-            val toast = Toast.makeText(this, text,  Toast.LENGTH_LONG) // in Activity
-            toast.show()
+            log("LANGUAGE", "NO SE RECUPERÓ EL IDIOMA")
         }
         setAppLocale()
         changeButtonsImages(savedLanguage)
@@ -54,8 +52,6 @@ class Results : AppCompatActivity() {
         val extras = intent.extras
         val getCorrectas = extras?.getString("correctas", 0.toString())
         val getIncorrectas = extras?.getString("incorrectas", 0.toString())
-        val correctasTxt = resources.getString(R.string.tv_correctas_String)
-        val incorrectasTxt = resources.getString(R.string.tv_incorrectas_String)
         val score = getCorrectas!!.toInt()
         checkScore(score)
         setNewRecords(getCorrectas!!.toInt(), getIncorrectas!!.toInt())
@@ -63,14 +59,14 @@ class Results : AppCompatActivity() {
         //val case = checkScore(score)
         //PRUEBAS
 
-        binding.tvCorrectas?.setText(correctasTxt+ getCorrectas)
-        binding.tvIncorrectas?.setText(incorrectasTxt + getIncorrectas)
+        binding.tvCorrectas?.setText(getCorrectas)
+        binding.tvIncorrectas?.setText(getIncorrectas)
 
         //PRUEBAS
         //binding.tvScoretest?.setText(case.toString())
         //PRUEBAS
 
-        binding.btnResults.setOnClickListener{
+        binding.btnResults?.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
@@ -96,25 +92,25 @@ class Results : AppCompatActivity() {
         //USAR EN PRUEBAS
         return preferences.getString(Preferences.LANGUAGE, valorPredeterminado) ?: valorPredeterminado
     }
-
     fun changeButtonsImages(savedLanguage: String){
         if(savedLanguage=="en"){
-            binding.btnResults.setBackgroundResource(R.drawable.backtomenubtnen)
+            binding.btnResults?.setBackgroundResource(R.drawable.backtomenubtnen)
+            binding.llResults?.setBackgroundResource(R.drawable.nuresultsbgen)
             return
         }
-        binding.btnResults.setBackgroundResource(R.drawable.backtomenubtn)
+        binding.btnResults?.setBackgroundResource(R.drawable.backtomenubtn)
+        binding.llResults?.setBackgroundResource(R.drawable.nuresultsbg)
     }
-
 
     private fun checkScore(getCorrectas: Int): Int{
         //de 0-50 mostrar mensaje de aliento   (0 a 25 preguntas correctas)
         if(getCorrectas <=25){
-            setResources(getString(R.string.tv_shame_String), R.drawable.scared,getString(R.string.tv_sentenceOne_String))
+            setResources(getString(R.string.tv_shame_String), R.drawable.studying,getString(R.string.tv_sentenceOne_String))
             return 0
         }
         //de 50-70 mostrar mensaje de nada mal (26 a 35 preguntas correctas)
         if(getCorrectas <=35){
-            setResources(getString(R.string.tv_almost_String),R.drawable.studying,getString(R.string.tv_sentenceTwo_String))
+            setResources(getString(R.string.tv_almost_String),R.drawable.almost,getString(R.string.tv_sentenceTwo_String))
             return 2
         }
         //de 70-100 mostrar cinturon de campeón y frase ganadora 36 a 50 preguntas))
@@ -134,8 +130,8 @@ class Results : AppCompatActivity() {
         var savedScore = getSavedScore(0)
         if (getCorrectas > savedScore){
             saveScore(getCorrectas, getIncorrectas)
-            val toast = Toast.makeText(this, "Registro guardado",  Toast.LENGTH_SHORT) // in Activity
-            toast.show()
+           /* val toast = Toast.makeText(this, "Registro guardado",  Toast.LENGTH_SHORT) // in Activity
+            toast.show()*/
         }
     }
     private fun setResources(mainText: String, Image: Int, sentence: String){

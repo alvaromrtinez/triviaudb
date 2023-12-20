@@ -11,6 +11,7 @@ import android.graphics.Typeface
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.os.Handler
+import android.view.KeyEvent
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
@@ -23,6 +24,7 @@ import com.airbnb.lottie.LottieAnimationView
 import com.gatonaranja.triviaudb.databinding.ActivityRandomQuizModeBinding
 import com.gatonaranja.triviaudb.databinding.DialogFeedbackBinding
 import com.gatonaranja.triviaudb.databinding.DialogBacktomenuBinding
+import com.gatonaranja.triviaudb.databinding.DialogPauseBinding
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import java.util.Locale
 
@@ -31,6 +33,7 @@ class RandomQuizMode : AppCompatActivity() {
     private lateinit var binding: ActivityRandomQuizModeBinding
     private lateinit var feedbackBinding: DialogFeedbackBinding
     private lateinit var backtoMenuBinding: DialogBacktomenuBinding
+    private lateinit var pauseBinding: DialogPauseBinding
     private var tvCuentaAtras: TextView? = null
     private lateinit var timer: CountDownTimer
     private var cronometroFuncion: Int = 0
@@ -55,10 +58,11 @@ class RandomQuizMode : AppCompatActivity() {
     private final var TAG = "RandomModeQuiz"
     private lateinit var interstitialAdManager: InterstitialAdManager
     private lateinit var audioManager: AudioManager
-    private lateinit var animationManager: AnimationsManager
-    private lateinit var animationView: LottieAnimationView
+    /*private lateinit var animationManager: AnimationsManager
+    private lateinit var animationView: LottieAnimationView*/
     private var respuestas: AlertDialog? = null
     private var backtoMenuDialog: AlertDialog? = null
+    private var pauseDialog: AlertDialog? = null
     private lateinit var preferences: SharedPreferences
     private lateinit var savedLanguage: String
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -69,15 +73,14 @@ class RandomQuizMode : AppCompatActivity() {
         setContentView(view)
         createAlertDialog()
         createBtmDialog()
+        createPauseDialog()
         fullScreenMode()
         preferences = getSharedPreferences(Preferences.DATA, Context.MODE_PRIVATE)
         try {
             savedLanguage = getLanguage("es")
         } catch (e: Exception) {
             e.printStackTrace()
-            val text = "NO SE RECUPERO EL IDIOMA"
-            val toast = Toast.makeText(this, text,  Toast.LENGTH_LONG) // in Activity
-            toast.show()
+            log("LANGUAGE", "NO SE RECUPERO EL IDIOMA")
         }
         setAppLocale()
         changeButtonsImages(savedLanguage)
@@ -95,7 +98,7 @@ class RandomQuizMode : AppCompatActivity() {
         var mQuestionsList: ArrayList<Question>? = Questions.getQuestions(this)
         var randomIndexes: List<Int>
         var ArraySize : Int = 50
-        randomIndexes = (0 until 60).toList().shuffled()
+        randomIndexes = (0 until 61).toList().shuffled()
         var posInRandomsArray: Int = 0
         var randomIndex = randomIndexes[posInRandomsArray]
         var question = mQuestionsList!!.get(randomIndex)
@@ -106,10 +109,10 @@ class RandomQuizMode : AppCompatActivity() {
         //buttonMenu = feedbackBinding.btnMenu
         buttonContinue = feedbackBinding.btnContinue
         audioManager = AudioManager(this)
-        audioManager.playMusicOn(R.raw.chhch)
-        animationView = binding.happyanimation
+        audioManager.playMusicOn(R.raw.appmusicbg)
+        /*animationView = binding.happyanimation
         animationManager = AnimationsManager(this)
-        animationManager.createAnimationView(750f, animationView)
+        animationManager.createAnimationView(750f, animationView)*/
         interstitialAdManager = InterstitialAdManager(this)
         //USAR EN PRUEBAS
         /* binding.btnNRandom.setOnClickListener(){
@@ -122,30 +125,24 @@ class RandomQuizMode : AppCompatActivity() {
     }
     override fun onPause() {
         super.onPause()
-        //hideAlertDialog()
         audioManager.pauseMusic()
-        /* //Guardar el array de numeros aleatorios.
-         //Guardar la posición actual de la pregunta (o feedback).
-         val toast = Toast.makeText(this, "¡La actividad esta en pausa!",  Toast.LENGTH_LONG)
+       /*  val toast = Toast.makeText(this, "¡La actividad esta en pausa!",  Toast.LENGTH_LONG)
          toast.show()*/
     }
     override fun onResume() {
         super.onResume()
-        audioManager.playMusicOn(R.raw.chhch)
+        audioManager.playMusicOn(R.raw.appmusicbg)
         //Recuperar el array de numeros aleatorios.
         //Recuperar la posición actual de la pregunta (o feedback).
         //showFeedback()
         /*val toast = Toast.makeText(this, "¡La actividad esta en resumen!",  Toast.LENGTH_LONG)
-        toast.show()
-        if(i == 5 ||i == 10){
-            val toast = Toast.makeText(this, "La posicion actual es: $i",  Toast.LENGTH_LONG)
-            toast.show()
-        }*/
+        toast.show()*/
     }
+
     override fun onStop() {
         super.onStop()
-        timer?.cancel()
-        /*val toast = Toast.makeText(this, "Activity onStop()",  Toast.LENGTH_LONG)
+        //timer?.cancel()
+       /* val toast = Toast.makeText(this, "Activity onStop()",  Toast.LENGTH_LONG)
         toast.show()*/
     }
 
@@ -174,11 +171,13 @@ class RandomQuizMode : AppCompatActivity() {
             backtoMenuBinding.btnYes.setBackgroundResource(R.drawable.backbtnen)
             backtoMenuBinding.btnCancel.setBackgroundResource(R.drawable.cancelbtnen)
             feedbackBinding.btnContinue.setBackgroundResource(R.drawable.continuebtnen)
+            pauseBinding.btnResume.setBackgroundResource(R.drawable.resumebtnen)
             return
         }
         backtoMenuBinding.btnYes.setBackgroundResource(R.drawable.backbtn)
         backtoMenuBinding.btnCancel.setBackgroundResource(R.drawable.cancelbtn)
         feedbackBinding.btnContinue.setBackgroundResource(R.drawable.continuebtn)
+        pauseBinding.btnResume.setBackgroundResource(R.drawable.resumebtnes)
     }
 
     fun fullScreenMode(){
@@ -191,11 +190,15 @@ class RandomQuizMode : AppCompatActivity() {
     }
 
     private fun questionProcess(pQuestionList: ArrayList<Question>?, pRandomIndexes: List<Int>,pArraySize: Int,pPosInRandomsArray: Int, pRandomIndex: Int, pQuestion: Question ,pCorrectAnswers: Int, pIncorrectAnswers: Int){
+        changeBtnStatus(false,false,false,false)
         setAndDisplayQuestion(pQuestion)
         startTimer(pQuestionList, pRandomIndexes, pArraySize, pPosInRandomsArray, pRandomIndex ,pQuestion,pCorrectAnswers, pIncorrectAnswers)
         viewClicked(pQuestionList, pRandomIndexes, pArraySize, pPosInRandomsArray, pRandomIndex ,pQuestion,pCorrectAnswers, pIncorrectAnswers)
         binding.ivBack.setOnClickListener(){
             showBacktomenuDialog(pQuestionList, pRandomIndexes, pArraySize, pPosInRandomsArray, pRandomIndex,pQuestion, pCorrectAnswers, pIncorrectAnswers)
+        }
+        binding.ivPause.setOnClickListener(){
+            showPauseDialog(pQuestionList, pRandomIndexes, pArraySize, pPosInRandomsArray, pRandomIndex,pQuestion, pCorrectAnswers, pIncorrectAnswers)
         }
     }
     private fun setAndDisplayQuestion(pQuestion: Question) {
@@ -209,10 +212,13 @@ class RandomQuizMode : AppCompatActivity() {
         option2.text = pQuestion.optionTwo
         option3.text = pQuestion.optionThree
         option4.text = pQuestion.optionFour
-        changeBtnStatus(true,true,true,true)
-
+        // Agrega un retardo de 2000 milisegundos (2 segundos)
+        val delayMillis: Long = 1000    // Crea un nuevo objeto Handler
+        val handler = Handler()         // Postea un Runnable después del retardo
+        handler.postDelayed({
+            changeBtnStatus(true, true, true, true)// Crea y muestra la pregunta después del retardo
+        }, delayMillis)
     }
-
 
     private fun startTimer(pQuestionList: ArrayList<Question>?, pRandomIndexes: List<Int>,pArraySize: Int,pPosInRandomsArray: Int, pRandomIndex: Int, pQuestion: Question, pCorrectAnswers: Int, pIncorrectAnswers: Int){
         if (!isTimerRunning) {
@@ -259,6 +265,8 @@ class RandomQuizMode : AppCompatActivity() {
         binding.tvId.text=("indicesAleatorios"+ "| "+pPosInRandomsArray.toString()+ " |")*/
         //TEST ONLY
         // timer?.cancel()
+        /*val toast = Toast.makeText(this, "IN ON SELECTEDOPTION FUNCTION",  Toast.LENGTH_LONG)
+        toast.show()*/
         cancelTimer()
         changeBtnStatus(false,false,false,false)
         checkAnswer(pQuestionArray, pRandomIndexes, pArraySize, pPosInRandomsArray, pRandomIndex, pQuestion, pSelectedOptionNum, pCorrectAnswers, pIncorrectAnswers)
@@ -276,24 +284,30 @@ class RandomQuizMode : AppCompatActivity() {
     private fun checkAnswer(pQuestionArray: ArrayList<Question>?, pRandomIndexes: List<Int>,pArraySize: Int,pPosInRandomsArray: Int, pRandomIndex: Int, pQuestion: Question, pSelectedOptionNum:Int, pCorrectAnswers: Int, pIncorrectAnswers: Int) {
         var pCorrectAnswers = pCorrectAnswers
         var pIncorrectAnswers = pIncorrectAnswers
-        val selectedOptionTv = placeAnimation(pSelectedOptionNum)
+        //val selectedOptionTv = placeAnimation(pSelectedOptionNum)
         //animationManager.setAnimation()
 
+        if(pSelectedOptionNum==0){
+            pIncorrectAnswers++
+            //animationManager.playSadAnimation(selectedOptionTv, R.raw.sademoji)
+            audioManager.playSoundOn(R.raw.wronganswersound)
+            applyDelay(pQuestionArray, pRandomIndexes, pArraySize, pPosInRandomsArray, pRandomIndex ,pQuestion, pCorrectAnswers,pIncorrectAnswers)
+            return //El flujo sigue hacia el método anterior ya que su llamado fue antes de este return.
+        }
         if (pQuestion!!.correctAnswer != pSelectedOptionNum) {
             answerView(pSelectedOptionNum, R.drawable.wrong_option_border_bg)
             answerView(pQuestion.correctAnswer, R.drawable.correct_option_border_bg)
             pIncorrectAnswers++
-            animationManager.playHappyAnimation(selectedOptionTv, R.raw.sademoji)
+            //animationManager.playHappyAnimation(selectedOptionTv, R.raw.sademoji)
             audioManager.playSoundOn(R.raw.wronganswersound)
             applyDelay(pQuestionArray, pRandomIndexes, pArraySize, pPosInRandomsArray, pRandomIndex ,pQuestion, pCorrectAnswers,pIncorrectAnswers)
         } else {
             pCorrectAnswers++
             answerView(pQuestion.correctAnswer, R.drawable.correct_option_border_bg)
-            animationManager.playSadAnimation(selectedOptionTv, R.raw.happyemoji)
+            //animationManager.playSadAnimation(selectedOptionTv, R.raw.happyemoji)
             audioManager.playSoundOn(R.raw.correctanswersound)
             applyDelay(pQuestionArray, pRandomIndexes, pArraySize, pPosInRandomsArray, pRandomIndex ,pQuestion, pCorrectAnswers,pIncorrectAnswers)
         }
-        //animationView.visibility = View.INVISIBLE
     }
     fun changeBtnStatus(option1Ena: Boolean, option2Ena: Boolean,option3Ena: Boolean,option4Ena: Boolean){
         option1.isEnabled = option1Ena
@@ -305,6 +319,7 @@ class RandomQuizMode : AppCompatActivity() {
     fun applyDelay(pQuestionArray: ArrayList<Question>?, pRandomIndexes: List<Int>,pArraySize: Int,pPosInRandomsArray: Int, pRandomIndex: Int, pQuestion: Question, pCorrectAnswers: Int, pIncorrectAnswers: Int){
         // Agrega un retardo de 2000 milisegundos (2 segundos)
         // Asegúrate de que la vista de Lottie sea visible
+        disableFeedbackButtons(false)
         val delayMillis: Long = 1500    // Crea un nuevo objeto Handler
         val handler = Handler()         // Postea un Runnable después del retardo
         handler.postDelayed({           // Crea y muestra el AlertDialog después del retardo
@@ -314,24 +329,20 @@ class RandomQuizMode : AppCompatActivity() {
     }
     fun createAlertDialog(){
         feedbackBinding = DialogFeedbackBinding.inflate(layoutInflater)
+        feedbackBinding.tvAnswer.text = "Respuesta" // Set text to TextView
         val builder = AlertDialog.Builder(this@RandomQuizMode)
         builder.setView(feedbackBinding.getRoot())
         respuestas = builder.create()
         respuestas!!.getWindow()!!.getAttributes()!!.windowAnimations = R.style.anim1; //style id
         respuestas!!.setCanceledOnTouchOutside(false);
+        respuestas!!.setOnKeyListener { _, keyCode, _ ->
+            keyCode == KeyEvent.KEYCODE_BACK  }
     }
 
     fun showFeedbackDialog(pQuestionArray: ArrayList<Question>?, pRandomIndexes: List<Int>,pArraySize: Int,pPosInRandomsArray: Int, pRandomIndex: Int, pQuestion: Question, pCorrectAnswers: Int, pIncorrectAnswers: Int){
         audioManager.stopSound()
         respuestas!!.show()
         feedbackBinding.tvFeed?.text = pQuestion.feedback
-        /* disableFeedbackButtons(false, false)
-         // Agrega un retardo de 2000 milisegundos (2 segundos)
-         val delayMillis: Long = 1000    // Crea un nuevo objeto Handler
-         val handler = Handler()         // Postea un Runnable después del retardo
-         handler.postDelayed({           // Crea y muestra el AlertDialog después del retardo
-             disableFeedbackButtons(true, true)
-         }, delayMillis)*/
         feedbackBinding.closeView.setOnClickListener{
             hideDialog()
             nextQuestion(pQuestionArray, pRandomIndexes, pArraySize, pPosInRandomsArray, pRandomIndex ,pQuestion, pCorrectAnswers, pIncorrectAnswers)
@@ -340,11 +351,11 @@ class RandomQuizMode : AppCompatActivity() {
             hideDialog()
             nextQuestion(pQuestionArray, pRandomIndexes, pArraySize, pPosInRandomsArray, pRandomIndex ,pQuestion, pCorrectAnswers, pIncorrectAnswers)
         }
-        /*  feedbackBinding.btnMenu.setOnClickListener{
-              val intent = Intent(this, MainActivity::class.java)
-              startActivity(intent)
-              finish()
-          }*/
+        val delayMillis: Long = 1000    // Crea un nuevo objeto Handler
+        val handler = Handler()         // Postea un Runnable después del retardo
+        handler.postDelayed({
+            disableFeedbackButtons(true)// Crea y muestra la pregunta después del retardo
+        }, delayMillis)
     }
     fun createBtmDialog(){
         backtoMenuBinding = DialogBacktomenuBinding.inflate(layoutInflater)
@@ -353,6 +364,9 @@ class RandomQuizMode : AppCompatActivity() {
         backtoMenuDialog = builder.create()
         backtoMenuDialog!!.getWindow()!!.getAttributes()!!.windowAnimations = R.style.anim1; //style id
         backtoMenuDialog!!.setCanceledOnTouchOutside(false);
+        backtoMenuDialog!!.setOnKeyListener { _, keyCode, _ ->
+            keyCode == KeyEvent.KEYCODE_BACK
+        }
     }
 
     fun showBacktomenuDialog(pQuestionList: ArrayList<Question>?, pRandomIndexes: List<Int>,pArraySize: Int,pPosInRandomsArray: Int, pRandomIndex: Int, pQuestion: Question, pCorrectAnswers: Int, pIncorrectAnswers: Int){
@@ -366,11 +380,33 @@ class RandomQuizMode : AppCompatActivity() {
         }
         backtoMenuBinding.btnCancel.setOnClickListener{
             hideBtmDialog()
-            audioManager.playMusicOn(R.raw.chhch)
+            audioManager.playMusicOn(R.raw.appmusicbg)
             startTimer(pQuestionList, pRandomIndexes, pArraySize, pPosInRandomsArray, pRandomIndex ,pQuestion,pCorrectAnswers, pIncorrectAnswers)
         }
     }
 
+    fun createPauseDialog(){
+        pauseBinding = DialogPauseBinding.inflate(layoutInflater)
+        val builder = AlertDialog.Builder(this@RandomQuizMode)
+        builder.setView(pauseBinding.getRoot())
+       pauseDialog = builder.create()
+       pauseDialog!!.getWindow()!!.getAttributes()!!.windowAnimations = R.style.anim1; //style id
+       pauseDialog!!.setCanceledOnTouchOutside(false);
+       pauseDialog!!.setOnKeyListener { _, keyCode, _ ->
+            keyCode == KeyEvent.KEYCODE_BACK
+        }
+    }
+
+    fun showPauseDialog(pQuestionList: ArrayList<Question>?, pRandomIndexes: List<Int>,pArraySize: Int,pPosInRandomsArray: Int, pRandomIndex: Int, pQuestion: Question, pCorrectAnswers: Int, pIncorrectAnswers: Int){
+        cancelTimer()
+        audioManager.pauseMusic()
+        pauseDialog!!.show()
+        pauseBinding.btnResume.setOnClickListener{
+            hidePauseDialog()
+            audioManager.playMusicOn(R.raw.appmusicbg)
+            startTimer(pQuestionList, pRandomIndexes, pArraySize, pPosInRandomsArray, pRandomIndex ,pQuestion,pCorrectAnswers, pIncorrectAnswers)
+        }
+    }
     fun showAlertDialog(){
         if (!respuestas!!.isShowing) {
             // Muestra el AlertDialog solo si no está en pantalla
@@ -394,6 +430,12 @@ class RandomQuizMode : AppCompatActivity() {
         }
     }
 
+    fun hidePauseDialog(){
+        if (pauseDialog!!.isShowing) {
+            pauseDialog!!.dismiss() // Oculta el AlertDialog si está en pantalla
+        }
+    }
+
     fun disableFeedbackButtons(btnContinue: Boolean){
         buttonContinue.isEnabled = btnContinue
     }
@@ -410,17 +452,11 @@ class RandomQuizMode : AppCompatActivity() {
             var pNextRandomIndex= pRandomIndexes[pNextPosInRandomsArray]
             var pNextQuestion = pQuestionArray!!.get(pNextRandomIndex)
             questionProcess(pQuestionArray, pRandomIndexes, pArraySize, pNextPosInRandomsArray, pNextRandomIndex,pNextQuestion,pCorrectAnswers, pIncorrectAnswers)
-            changeBtnStatus(true, true, true, true)
-            // Agrega un retardo de 2000 milisegundos (2 segundos)
-            val delayMillis: Long = 2000    // Crea un nuevo objeto Handler
-            val handler = Handler()         // Postea un Runnable después del retardo
-            handler.postDelayed({           // Crea y muestra la pregunta después del retardo
-            }, delayMillis)
         }
         //TEST ONLY
         // SOLO SE NECESITA LA LINEA DE ABAJO PARA VER LA POSICION DE LA PREGUNTA
-        binding.tvId.text=("indicesAleatorios"+ "| "+pPosInRandomsArray.toString()+ " |")
-        binding.tvRNumber.text = ("Numero aleatorio actual: "+ pRandomIndex.toString())
+       /* binding.tvId.text=("indicesAleatorios"+ "| "+pPosInRandomsArray.toString()+ " |")
+        binding.tvRNumber.text = ("Numero aleatorio actual: "+ pRandomIndex.toString())*/
         //TEST ONLY
 
 
@@ -516,7 +552,6 @@ class RandomQuizMode : AppCompatActivity() {
 
     private fun showAd() {
         interstitialAdManager.showAds()     // Llamada para mostrar el anuncio
-
     }
     private fun checkCounter(pPosInRandomsArray: Int){
         var count: Int

@@ -56,16 +56,14 @@ class MenuFragment : Fragment() {
            ViewGroup.LayoutParams.WRAP_CONTENT
        ))*/
         //TEST ONLY
-
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         changeTitleImage(savedLanguage)
         changeButtonsImages(savedLanguage )
         createCustomDialog()
         createInstructionsDialog()
-        binding.ivConfig.setOnClickListener(){
+        binding.ivConfig?.setOnClickListener(){
             findNavController().navigate(MenuFragmentDirections.actionMenuFragmentToConfigFragment())
             //replaceFragment(ConfigFragment())
         }
@@ -75,20 +73,20 @@ class MenuFragment : Fragment() {
             startActivity(intent)
             activity?.finish()
         }*/
-        binding.btnAg.setOnClickListener{
+        binding.btnAg?.setOnClickListener{
             val intentR = Intent(activity, RandomQuizMode::class.java)
             startActivity(intentR)
             activity?.finish()
         }
-        binding.ivRecords.setOnClickListener(){
+        binding.ivRecords?.setOnClickListener(){
             //replaceFragment(ConfigFragment())
             findNavController().navigate(MenuFragmentDirections.actionMenuFragmentToStatsFragment())
         }
-        binding.ivInfo.setOnClickListener(){
+        binding.ivInfo?.setOnClickListener(){
             showInfoDialog()
         }
 
-        binding.btnHowtoplay.setOnClickListener(){
+        binding.btnHowtoplay?.setOnClickListener(){
             showInstructionsDialog()
         }
     }
@@ -107,7 +105,7 @@ class MenuFragment : Fragment() {
             infoDialog!!.setCanceledOnTouchOutside(false);
             infoDialog!!.show()
         }
-        infoDialogBinding.closeView.setOnClickListener{
+        infoDialogBinding.closeView!!.setOnClickListener{
             infoDialog!!.dismiss()
         }
     }
@@ -126,7 +124,7 @@ class MenuFragment : Fragment() {
             instructionsDialog!!.setCanceledOnTouchOutside(false);
             instructionsDialog!!.show()
         }
-        instructionsDialogBinding.closeView.setOnClickListener{
+        instructionsDialogBinding.closeView!!.setOnClickListener{
             instructionsDialog!!.dismiss()
         }
     }
@@ -142,19 +140,19 @@ class MenuFragment : Fragment() {
     }
     fun changeTitleImage(savedLanguage: String){
         if(savedLanguage=="en"){
-            binding.ivTitle.setImageResource(R.drawable.nutitleen)
+            binding.ivTitle?.setImageResource(R.drawable.nutitleen)
             return
         }
-        binding.ivTitle.setImageResource(R.drawable.nutitlees)
+        binding.ivTitle?.setImageResource(R.drawable.nutitlees)
     }
     fun changeButtonsImages(savedLanguage: String){
         if(savedLanguage=="en"){
-            binding.btnAg.setBackgroundResource(R.drawable.playbtnen)
-            binding.btnHowtoplay.setBackgroundResource(R.drawable.instructionsbtnen)
+            binding.btnAg?.setBackgroundResource(R.drawable.playbtnen)
+            binding.btnHowtoplay?.setBackgroundResource(R.drawable.instructionsbtnen)
             return
         }
-        binding.btnAg.setBackgroundResource(R.drawable.playbtn)
-        binding.btnHowtoplay.setBackgroundResource(R.drawable.instructionsbtn)
+        binding.btnAg?.setBackgroundResource(R.drawable.playbtn)
+        binding.btnHowtoplay?.setBackgroundResource(R.drawable.instructionsbtn)
     }
     private fun replaceFragment(fragment : Fragment){
         val fragmentManager = requireActivity().supportFragmentManager

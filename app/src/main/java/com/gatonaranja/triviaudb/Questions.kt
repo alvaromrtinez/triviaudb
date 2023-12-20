@@ -66,8 +66,8 @@ object Questions {
             arrayOf(context.getString(R.string.que58_String), context.getString(R.string.que58_op1_String) ,context.getString(R.string.que58_op2_String),context.getString(R.string.que58_op3_String),context.getString(R.string.que58_op4_String), context.getString(R.string.que58_feedback_String)),
             arrayOf(context.getString(R.string.que59_String), context.getString(R.string.que59_op1_String) ,context.getString(R.string.que59_op2_String),context.getString(R.string.que59_op3_String),context.getString(R.string.que59_op4_String), context.getString(R.string.que59_feedback_String)),
             arrayOf(context.getString(R.string.que60_String), context.getString(R.string.que60_op1_String) ,context.getString(R.string.que60_op2_String),context.getString(R.string.que60_op3_String),context.getString(R.string.que60_op4_String), context.getString(R.string.que60_feedback_String)),
+            arrayOf(context.getString(R.string.que61_String), context.getString(R.string.que61_op1_String) ,context.getString(R.string.que61_op2_String),context.getString(R.string.que61_op3_String),context.getString(R.string.que61_op4_String), context.getString(R.string.que61_feedback_String)),
             /*arrayOf(context.getString(R.string.que00_String), context.getString(R.string.que00_op1_String) ,context.getString(R.string.que00_op2_String),context.getString(R.string.que00_op3_String),context.getString(R.string.que00_op4_String), context.getString(R.string.que00_feedback_String)),
-            arrayOf(context.getString(R.string.que00_String), context.getString(R.string.que00_op1_String) ,context.getString(R.string.que00_op2_String),context.getString(R.string.que00_op3_String),context.getString(R.string.que00_op4_String), context.getString(R.string.que00_feedback_String)),
             arrayOf(context.getString(R.string.que00_String), context.getString(R.string.que00_op1_String) ,context.getString(R.string.que00_op2_String),context.getString(R.string.que00_op3_String),context.getString(R.string.que00_op4_String), context.getString(R.string.que00_feedback_String)),
             arrayOf(context.getString(R.string.que00_String), context.getString(R.string.que00_op1_String) ,context.getString(R.string.que00_op2_String),context.getString(R.string.que00_op3_String),context.getString(R.string.que00_op4_String), context.getString(R.string.que00_feedback_String)),
             arrayOf(context.getString(R.string.que00_String), context.getString(R.string.que00_op1_String) ,context.getString(R.string.que00_op2_String),context.getString(R.string.que00_op3_String),context.getString(R.string.que00_op4_String), context.getString(R.string.que00_feedback_String)),
@@ -774,7 +774,7 @@ object Questions {
             questionMatrix[50][3],
             questionMatrix[50][4],
             questionMatrix[50][5],
-            2,
+            3,
             3
         )
         questionsList.add(que51)
@@ -788,7 +788,7 @@ object Questions {
             questionMatrix[51][4],
             questionMatrix[51][5],
             2,
-            4
+            2
         )
         questionsList.add(que52)
 
@@ -800,7 +800,7 @@ object Questions {
             questionMatrix[52][3],
             questionMatrix[52][4],
             questionMatrix[52][5],
-            2,
+            3,
             2
         )
         questionsList.add(que53)
@@ -813,8 +813,8 @@ object Questions {
             questionMatrix[53][3],
             questionMatrix[53][4],
             questionMatrix[53][5],
-            2,
-            3
+            3,
+            1
         )
         questionsList.add(que54)
 
@@ -826,8 +826,8 @@ object Questions {
             questionMatrix[54][3],
             questionMatrix[54][4],
             questionMatrix[54][5],
-            2,
-            1
+            3,
+            3
         )
         questionsList.add(que55)
 
@@ -839,8 +839,8 @@ object Questions {
             questionMatrix[55][3],
             questionMatrix[55][4],
             questionMatrix[55][5],
-            2,
-            4
+            3,
+            3
         )
         questionsList.add(que56)
 
@@ -853,7 +853,7 @@ object Questions {
             questionMatrix[56][4],
             questionMatrix[56][5],
             2,
-            3
+            4
         )
         questionsList.add(que57)
 
@@ -866,7 +866,7 @@ object Questions {
             questionMatrix[57][4],
             questionMatrix[57][5],
             2,
-            4
+            2
         )
         questionsList.add(que48)
 
@@ -879,7 +879,7 @@ object Questions {
             questionMatrix[58][4],
             questionMatrix[58][5],
             2,
-            2
+            1
         )
         questionsList.add(que59)
 
@@ -895,6 +895,20 @@ object Questions {
             3
         )
         questionsList.add(que60)
+
+        val que61 = Question (
+            61,
+            questionMatrix[60][0],
+            questionMatrix[60][1],
+            questionMatrix[60][2],
+            questionMatrix[60][3],
+            questionMatrix[60][4],
+            questionMatrix[60][5],
+            4,
+            3
+        )
+        questionsList.add(que61)
+
         return questionsList
     }
 

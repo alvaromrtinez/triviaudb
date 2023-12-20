@@ -19,18 +19,14 @@ class AudioManager(private val context: Context) {
             savedMusicStatus = getMusicStatus(1)
         } catch (e: Exception) {
             e.printStackTrace()
-            val text = "NO SE RECUPERO CONFIGURACIÓN DE LA MÚSICA"
-            val toast = Toast.makeText(context, text,  Toast.LENGTH_LONG) // in Activity
-            toast.show()
+            log("MUSIC", "NO SE RECUPERÓ LA CONFIGURACIÓN DE LA MÚSICA")
         }
 
         try {
             savedSoundStatus = getSoundsStatus(1)
         } catch (e: Exception) {
             e.printStackTrace()
-            val text = "NO SE RECUPERO CONFIGURACIÓN DEL SONIDO"
-            val toast = Toast.makeText(context, text,  Toast.LENGTH_LONG) // in Activity
-            toast.show()
+            log("MUSIC", "NO SE RECUPERÓ LA CONFIGURACIÓN DEL SONIDO")
         }
 
     }
@@ -50,7 +46,7 @@ class AudioManager(private val context: Context) {
     fun playMusic(music: Int){
         if (mMediaPlayer == null) {
             mMediaPlayer = MediaPlayer.create(context, music)
-            mMediaPlayer!!.isLooping = false
+            mMediaPlayer!!.isLooping = true
             mMediaPlayer!!.start()
         } else mMediaPlayer!!.start()
     }

@@ -17,7 +17,7 @@ android {
         minSdk 21
         targetSdk 33
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -32,7 +32,7 @@ android {
         release {
             minifyEnabled true
             shrinkResources true
-            signingConfig signingConfigs.debug
+            //signingConfig signingConfigs.debug
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -70,4 +70,5 @@ dependencies {
     implementation 'com.google.android.gms:play-services-ads:22.5.0'
     implementation("androidx.core:core-splashscreen:1.0.0")
     implementation  ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
+    implementation 'com.google.firebase:firebase-config-ktx'
 }

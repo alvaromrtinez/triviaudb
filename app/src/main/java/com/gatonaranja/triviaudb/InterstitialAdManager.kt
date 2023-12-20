@@ -14,7 +14,7 @@ import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 class InterstitialAdManager(private val context: Context) {
     //private lateinit var binding: ActivityInterstitialBinding
     private var mInterstitialAd: InterstitialAd? = null
-    private final var TAG = "InterstitialActivity"
+    private final var TAG = "InterstitialAd"
     init{
         initAds()
         initListeners()
@@ -25,8 +25,9 @@ class InterstitialAdManager(private val context: Context) {
         /*RequestConfiguration.MAX_AD_CONTENT_RATING_G);
         MobileAds.setRequestConfiguration(configurationBuilder.build());*/
 
+        //ca-app-pub-3940256099942544/1033173712 SAMPLE INTERSTITIALID
         var adRequest = AdRequest.Builder().build()
-        InterstitialAd.load(context,"ca-app-pub-3940256099942544/1033173712", adRequest, object : InterstitialAdLoadCallback() {
+        InterstitialAd.load(context,"ca-app-pub-4025059694527806/6477310259", adRequest, object : InterstitialAdLoadCallback() {
             override fun onAdFailedToLoad(adError: LoadAdError) {
                 //Log .d(TAG, "Ad wasn't loaded")
                 // Set a key to a string.

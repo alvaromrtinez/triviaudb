@@ -26,7 +26,6 @@ class AnimationsManager(private val context: Context) {
             ViewGroup.LayoutParams.WRAP_CONTENT
         )
         animationView.layoutParams = layoutParams*/
-
         // Cambiar el tamaño de la vista
         animationView.layoutParams.width = 180 // Reemplaza "nuevoAnchoEnPixeles" con el ancho deseado
         animationView.layoutParams.height = 180 // Reemplaza "nuevoAltoEnPixeles" con el alto deseado
@@ -41,7 +40,7 @@ class AnimationsManager(private val context: Context) {
 
     fun playHappyAnimation(correctOption: TextView, animation:Int){
         this.animationView = animationView
-        val correctOptionY = correctOption.y + 150f // Obtén la posición vertical de la vista de opción correcta
+        val correctOptionY = correctOption.y + 0f // Obtén la posición vertical de la vista de opción correcta
         val finalY = correctOptionY - 300f // Calcula la posición final para la vista de Lottie
         cancelAnimation()// Cancel any previous animation
         //Declaring animations

@@ -13,6 +13,7 @@ import android.view.View
 import android.view.ViewGroup
 import java.util.Locale
 import com.gatonaranja.triviaudb.databinding.FragmentConfigBinding
+import android.content.pm.PackageManager
 
 class ConfigFragment : Fragment(),View.OnClickListener {
 
@@ -99,6 +100,7 @@ class ConfigFragment : Fragment(),View.OnClickListener {
     }
 
     fun getMusicStatus(valorPredeterminado: Int): Int {
+        return preferences.getInt(Preferences.MUSIC, valorPredeterminado) ?: valorPredeterminado
         //sharedPreferences = getSharedPreferences("Configuration", Context.MODE_PRIVATE)
         //USAR EN PRUEBAS
         /*val idiomaRecuperado = sharedPreferences.getString(preferencia, valorPredeterminado) ?: valorPredeterminado
@@ -106,24 +108,23 @@ class ConfigFragment : Fragment(),View.OnClickListener {
         val toast = Toast.makeText(this, text,  Toast.LENGTH_LONG) // in Activity
         toast.show()*/
         //USAR EN PRUEBAS
-        return preferences.getInt(Preferences.MUSIC, valorPredeterminado) ?: valorPredeterminado
     }
 
     fun checkMusicStatus(){
         val musicValue: Int = getMusicStatus(1)
         if(musicValue == 1){
             changeMusicStatus(0)
-            setAndSaveMusicImage(R.drawable.ygmute)
+            setAndSaveMusicImage("ygmute")
             return
         }
         changeMusicStatus(1)
-        setAndSaveMusicImage(R.drawable.ygvolume)
+        setAndSaveMusicImage("ygvolume")
         return
     }
 
     fun changeMusicStatus(value: Int){
         val editor = preferences.edit()
-        editor.putInt(Preferences.MUSIC, value)// Cambia "es" al valor seleccionado por el usuario
+        editor.putInt(Preferences.MUSIC, value)// Guarda al valor seleccionado por el usuario 1 o 0
         editor.apply() // Guarda los cambios
         //USAR EN PRUEBAS
         /*val text = "El Value de Music Fue Cambiado A: $value"
@@ -131,12 +132,15 @@ class ConfigFragment : Fragment(),View.OnClickListener {
         toast.show()*/
         //USAR EN PRUEBAS
     }
-
-    private fun setAndSaveMusicImage(musicImg: Int){
-        binding.ivMusic?.setImageResource(musicImg)
+    private fun setAndSaveMusicImage(musicImg: String){
         val editor = preferences.edit()
-        editor.putInt(Preferences.MUSICIMG, musicImg)
+        editor.putString(Preferences.MUSICIMG, musicImg)
         editor.apply()
+        val imgName = preferences.getString(Preferences.MUSICIMG, musicImg)// Recuperar el nombre de la imagen desde SharedPreferences
+        if (!imgName.isNullOrEmpty()) {                                                                         //Verificar si se obtuvo el nombre de la imagen
+            val resourceId = resources.getIdentifier(imgName, "drawable", context?.packageName)// Cargar la imagen utilizando el nombre de la imagen almacenada
+            binding.ivMusic?.setImageResource(resourceId) //Cambia la imagen al momento de activar/desactivar
+        }
         /*val text = "La imagen de Music Fue Cambiada A: $musicImg"
         val toast = Toast.makeText(context, text,  Toast.LENGTH_SHORT) // in Activity
         toast.show()*/
@@ -158,11 +162,11 @@ class ConfigFragment : Fragment(),View.OnClickListener {
         val soundsValue: Int = getSoundsStatus(1)
         if(soundsValue == 1){
             changeSoundsStatus(0)
-            setAndSaveSoundsImage(R.drawable.ygmute)
+            setAndSaveSoundsImage("ygmute")
             return
         }
         changeSoundsStatus(1)
-        setAndSaveSoundsImage(R.drawable.ygvolume)
+        setAndSaveSoundsImage("ygvolume")
     }
 
     fun changeSoundsStatus(value: Int ){
@@ -176,35 +180,45 @@ class ConfigFragment : Fragment(),View.OnClickListener {
         //FOR TEST ONLY
     }
 
-    private fun setAndSaveSoundsImage(soundImg: Int){
-        binding.ivSounds?.setImageResource(soundImg)
+    private fun setAndSaveSoundsImage(soundsImg: String){
         val editor = preferences.edit()
-        editor.putInt(Preferences.SOUNDSIMG, soundImg)
+        editor.putString(Preferences.SOUNDSIMG, soundsImg)
         editor.apply()
+        val imgName = preferences.getString(Preferences.SOUNDSIMG, soundsImg)// Recuperar el nombre de la imagen desde SharedPreferences
+        if (!imgName.isNullOrEmpty()) {                                                                         //Verificar si se obtuvo el nombre de la imagen
+            val resourceId = resources.getIdentifier(imgName, "drawable", context?.packageName)// Cargar la imagen utilizando el nombre de la imagen almacenada
+            binding.ivSounds?.setImageResource(resourceId) //Cambia la imagen al momento de activar/desactivar
+        }
         /*val text = "La imagen de Sound Fue Cambiada A: $soundImg" //FOR TEST ONLY
         val toast = Toast.makeText(context, text,  Toast.LENGTH_SHORT) // in Activity
         toast.show()*///FOR TEST ONLY
     }
-    fun getSoundsImage(valorPredeterminado: Int): Int {
-        val savedsimg = preferences.getInt(Preferences.SOUNDSIMG, valorPredeterminado) ?: valorPredeterminado
-        /*val text = "La imagen de de Sound es: $savedsimg"
+    fun getSoundsImage(valorPredeterminado: String): String {
+        return preferences.getString(Preferences.SOUNDSIMG, valorPredeterminado) ?: valorPredeterminado
+        /*val savedsimg = preferences.getInt(Preferences.SOUNDSIMG, valorPredeterminado) ?: valorPredeterminado
+        val text = "La imagen de de Sound es: $savedsimg"
         val toast = Toast.makeText(context, text,  Toast.LENGTH_SHORT) // in Activity
         toast.show()*/
-
-        return preferences.getInt(Preferences.SOUNDSIMG, valorPredeterminado) ?: valorPredeterminado
     }
-    fun getMusicImage(valorPredeterminado: Int): Int {
+    fun getMusicImage(valorPredeterminado: String): String {
+        return preferences.getString(Preferences.MUSICIMG, valorPredeterminado) ?: valorPredeterminado
         /*val savedmimg= preferences.getInt(Preferences.MUSICIMG, valorPredeterminado) ?: valorPredeterminado
         val text = "La imagen de Music es: $savedmimg"
         val toast = Toast.makeText(context, text,  Toast.LENGTH_SHORT) // in Activity
         toast.show()*/
-        return preferences.getInt(Preferences.MUSICIMG, valorPredeterminado) ?: valorPredeterminado
     }
     fun setSavedImages(){
-        val savedsImage = getSoundsImage(R.drawable.ygvolume)
-        binding.ivSounds?.setImageResource(savedsImage)
-        val savedmImage = getMusicImage(R.drawable.ygvolume)
-        binding.ivMusic?.setImageResource(savedmImage)
+        val savedsImage = getSoundsImage("ygvolume")
+        val savedmImage = getMusicImage("ygvolume")
+        if (!savedmImage.isNullOrEmpty()) {
+            val resourceId = resources.getIdentifier(savedsImage, "drawable", context?.packageName) // Cargar la imagen utilizando el nombre de la imagen almacenada
+            binding.ivSounds?.setImageResource(resourceId) //Cambia la imagen al momento de activar/desactivar
+        }
+        //Verificar si se obtuvo el nombre de la imagen
+        if (!savedmImage.isNullOrEmpty()) {
+            val resourceId = resources.getIdentifier(savedmImage, "drawable", context?.packageName) // Cargar la imagen utilizando el nombre de la imagen almacenada
+            binding.ivMusic?.setImageResource(resourceId) //Cambia la imagen al momento de activar/desactivar
+        }
     }
     private fun restartActivity() {
         val intent = Intent(activity, MainActivity::class.java)

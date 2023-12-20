@@ -16,14 +16,17 @@
         <activity
             android:name=".Results"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.TriviaUdb" />
         <activity
             android:name=".RandomQuizMode"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.TriviaUdb" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.App.Starting">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,8 +36,8 @@
         </activity> <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713" />
+            android:value="ca-app-pub-4025059694527806~9078820224"
+            />
     </application>
-
 </manifest>
 
