@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_stats"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="left"
+        android:background="@drawable/circle_btn"
+        app:layout_constraintTop_toBottomOf="@+id/circlebtnsTop"
+        app:layout_constraintStart_toStartOf="@id/titleStart"
+        app:layout_constraintBottom_toTopOf="@+id/circlebtnsBottom"
+        app:layout_constraintDimensionRatio="1:1"
+        app:srcCompat="@drawable/ic_back"
+        app:tint="@color/crimson" />
+
+    <TextView
+        android:id="@+id/tv_stats"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/roundedtv"
+        android:backgroundTint="@color/chocolate"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="@string/tv_stats_title_String"
+        android:textColor="@color/cornsilk"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="@id/titleStart"
+        app:layout_constraintEnd_toEndOf="@id/titleEnd"
+        app:layout_constraintTop_toTopOf="@id/titleTop"
+        app:layout_constraintBottom_toBottomOf="@id/titleBottom"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/podium"
+        app:layout_constraintStart_toStartOf="@id/imageStart"
+        app:layout_constraintEnd_toEndOf="@id/imageEnd"
+        app:layout_constraintBottom_toTopOf="@id/imageBottom"
+        app:layout_constraintTop_toTopOf="@id/imageTop"
+        app:layout_constraintDimensionRatio="1:1"/>
+
+    <TextView
+        android:id="@+id/tv_language"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonbordercolor"
+        android:gravity="center"
+        android:text="@string/tv_record_String"
+        android:textColor="@color/chocolate"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@id/subtitlesStart"
+        app:layout_constraintEnd_toEndOf="@id/subtitlesEnd"
+        app:layout_constraintTop_toTopOf="@id/subtitleoneTop"
+        app:layout_constraintBottom_toBottomOf="@id/subtitleoneBottom"/>
+
+    <GridLayout
+        android:id="@+id/scoreGrid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="2"
+        android:rowCount="1"
+        app:layout_constraintStart_toStartOf="@id/gridsStart"
+        app:layout_constraintEnd_toEndOf="@id/gridsEnd"
+        app:layout_constraintTop_toBottomOf="@id/scoreTop"
+        app:layout_constraintBottom_toTopOf="@id/scoreBottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_spanish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="25dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/floralwhite"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_cscore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/buttonbordercolor"
+                        android:gravity="center"
+                        android:text="29"
+                        android:textColor="@color/greenp"
+                        android:textSize="80sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_corrects"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/naranjad"
+                        android:gravity="center"
+                        android:text="@string/tv_correctasDos_String"
+                        android:textColor="@color/cornsilk"
+                        android:textSize="@dimen/_20sdp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_english"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/floralwhite"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_iscore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/buttonbordercolor"
+                        android:gravity="center"
+                        android:text="29"
+                        android:textColor="@color/crimson"
+                        android:textSize="80sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_incorrects"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/naranjad"
+                        android:gravity="center"
+                        android:text="@string/tv_incorrectasDos_String"
+                        android:textColor="@color/cornsilk"
+                        android:textSize="@dimen/_19sdp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </GridLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/circlebtnsTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/circlebtnsBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.07" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/titleStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/titleEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/titleTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/titleBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.17" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/imageStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/imageEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/imageTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/imageBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/subtitlesStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/subtitlesEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/subtitleoneTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/subtitleoneBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.57" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gridsStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gridsEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/scoreTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/scoreBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+</androidx.constraintlayout.widget.ConstraintLayout>

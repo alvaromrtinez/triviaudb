@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/frmTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/titlebg">
+
+            <ImageView
+                android:id="@+id/ivTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="0dp" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_ag"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/playbtn"
+            android:textColor="@color/cornsilk"></Button>
+
+        <!--        <Button-->
+        <!--            android:id="@+id/btn_smg"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="@dimen/_45sdp"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:layout_marginTop="@dimen/_20sdp"-->
+        <!--            android:layout_marginHorizontal="@dimen/_40sdp"-->
+        <!--            android:background="@drawable/btn_rounded"-->
+        <!--            android:backgroundTint="@color/chocolate"-->
+        <!--            android:text="@string/btn_smg_String"-->
+        <!--            android:textSize="@dimen/_12sdp"-->
+        <!--            android:textColor="@color/cornsilk"-->
+        <!--            android:enabled="false"></Button>-->
+        <Button
+            android:id="@+id/btn_howtoplay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/instructionsbtn"
+            android:textColor="@color/cornsilk"
+            android:textSize="@dimen/_12sdp"></Button>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:background="@color/floralwhite"
+            app:columnCount="3">
+
+
+            <ImageView
+                android:id="@+id/ivInfo"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/info"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/ivRecords"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/podium"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/ivConfig"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/settings"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center" />
+        </androidx.gridlayout.widget.GridLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

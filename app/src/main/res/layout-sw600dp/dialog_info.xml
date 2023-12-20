@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/close_view"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_gravity="right"
+        android:background="@drawable/circle_btn"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_close"
+        app:tint="@color/crimson"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_32sdp"
+        app:layout_constraintTop_toBottomOf="@+id/close_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tv_abouttitle_String"
+                android:textStyle="bold"
+                android:textSize="@dimen/_40sdp" />
+
+            <GridLayout
+                android:id="@+id/triviaGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:columnCount="1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_language">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_trivia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/floralwhite"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_trivia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:background="@color/gold"
+                            android:gravity="center"
+                            android:text="@string/tv_aboutapptitle_String"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_30sdp" />
+
+                        <TextView
+                            android:id="@+id/trivia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:background="@color/floralwhite"
+                            android:gravity="center"
+                            android:text="@string/tv_abouttext_String"
+                            android:textSize="@dimen/_21sdp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/creditsGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:columnCount="1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_language">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_credits"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/floralwhite"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_creditstitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/gold"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="@string/tv_creditstitle_String"
+                            android:textSize="@dimen/_30sdp"/>
+
+                        <ImageView
+                            android:id="@+id/iv_credits"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_140sdp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            app:srcCompat="@drawable/icons" />
+
+                        <TextView
+                            android:id="@+id/tv_creditstext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:background="@color/floralwhite"
+                            android:gravity="center"
+                            android:text="@string/tv_creditstext_String"
+                            android:textSize="@dimen/_22sdp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/privacyGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:columnCount="1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_language">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_policy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/floralwhite"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_policytitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/gold"
+                            android:gravity="center"
+                            android:text="@string/tv_policytitle_String"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_30sdp" />
+
+                        <ImageView
+                            android:id="@+id/iv_policy"
+                            android:layout_width="150dp"
+                            android:layout_height="170dp"
+                            android:layout_gravity="center_horizontal"
+                            app:srcCompat="@drawable/policy" />
+
+                        <TextView
+                            android:id="@+id/tv_policy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/floralwhite"
+                            android:textAlignment="center"
+                            android:text="@string/tv_policytext_String"
+                            android:textSize="26sp"
+                            android:autoLink="web"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

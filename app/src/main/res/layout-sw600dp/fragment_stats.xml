@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_stats"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_gravity="left"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/circle_btn"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/toolbar"
+            app:srcCompat="@drawable/ic_back"
+            app:tint="@color/crimson" />
+
+        <TextView
+            android:id="@+id/tv_config"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginHorizontal="50dp"
+            android:background="@drawable/roundedtv"
+            android:backgroundTint="@color/chocolate"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/tv_stats_title_String"
+            android:textColor="@color/cornsilk"
+            android:textSize="45sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:src="@drawable/podium" />
+
+        <TextView
+            android:id="@+id/tv_language"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/buttonbordercolor"
+            android:gravity="center"
+            android:text="@string/tv_record_String"
+            android:textColor="@color/chocolate"
+            android:textSize="35sp" />
+
+        <GridLayout
+            android:id="@+id/languageGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:layout_marginTop="20dp"
+            android:columnCount="2"
+            android:rowCount="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_20sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_spanish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/floralwhite"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_cscore"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/buttonbordercolor"
+                            android:gravity="center"
+                            android:text="29"
+                            android:textColor="@color/greenp"
+                            android:textSize="80sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_corrects"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@color/naranjad"
+                            android:gravity="center"
+                            android:text="@string/tv_correctasDos_String"
+                            android:textColor="@color/cornsilk"
+                            android:textSize="@dimen/_17sdp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_english"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/floralwhite"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_iscore"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/buttonbordercolor"
+                            android:gravity="center"
+                            android:text="29"
+                            android:textColor="@color/crimson"
+                            android:textSize="80sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_incorrects"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/naranjad"
+                            android:gravity="center"
+                            android:text="@string/tv_incorrectasDos_String"
+                            android:textColor="@color/cornsilk"
+                            android:textSize="@dimen/_17sdp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

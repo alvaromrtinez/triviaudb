@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RandomQuizMode">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="left"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/circle_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circlebtnsTop"
+        app:layout_constraintBottom_toTopOf="@id/circlesbtnsBottom"
+        app:layout_constraintDimensionRatio="1:1"
+        app:srcCompat="@drawable/ic_back"
+        app:tint="@color/crimson" />
+
+    <ImageView
+        android:id="@+id/ivPause"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:background="@drawable/circle_btn"
+        android:paddingHorizontal="@dimen/_1sdp"
+        android:paddingVertical="@dimen/_3sdp"
+        app:layout_constraintStart_toEndOf="@id/ivBack"
+        app:layout_constraintTop_toBottomOf="@id/circlebtnsTop"
+        app:layout_constraintBottom_toTopOf="@id/circlesbtnsBottom"
+        app:layout_constraintDimensionRatio="1:1"
+        app:srcCompat="@android:drawable/ic_media_pause"
+        app:tint="@color/crimson" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/nuquestionsbg"
+        app:layout_constraintBottom_toTopOf="@id/questionfrmBottom"
+        app:layout_constraintEnd_toEndOf="@id/questionfrmEnd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/questionfrmStart"
+        app:layout_constraintTop_toBottomOf="@id/questionfrmTop"
+        app:layout_constraintVertical_bias="0.0">
+        <!-- USAR PARA PRUEBAS-->
+        <!--            <TextView-->
+        <!--                android:id="@+id/tv_rNumber"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="Indice aleatorio actual" />-->
+        <!--             USAR PARA PRUEBAS-->
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="@dimen/_20sdp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/tv_question_String"
+            android:textColor="#363A43"
+            android:textSize="@dimen/_22sdp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvCuentaAtras"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/tv_countdown_String"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/counterTop"
+        app:layout_constraintBottom_toBottomOf="@+id/counterBottom"
+        />
+
+    <TextView
+        android:id="@+id/tv_option_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/optiononeStart"
+        app:layout_constraintEnd_toEndOf="@id/optiononeEnd"
+        app:layout_constraintTop_toBottomOf="@id/optiononeTop"
+        app:layout_constraintBottom_toTopOf="@id/optiononeBottom"
+        android:background="@drawable/questionsbtn"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/floralwhite"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        tools:text="Option 1"/>
+
+    <TextView
+        android:id="@+id/tv_option_two"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/optiontwoStart"
+        app:layout_constraintEnd_toEndOf="@id/optiontwoEnd"
+        app:layout_constraintTop_toBottomOf="@id/optiontwoTop"
+        app:layout_constraintBottom_toTopOf="@id/optiontwoBottom"
+        android:background="@drawable/questionsbtn"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/floralwhite"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        tools:text="Option 2" />
+    <TextView
+        android:id="@+id/tv_option_three"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/optionthreeStart"
+        app:layout_constraintEnd_toEndOf="@id/optionthreeEnd"
+        app:layout_constraintTop_toBottomOf="@id/optionthreeTop"
+        app:layout_constraintBottom_toTopOf="@id/optionthreeBottom"
+        android:background="@drawable/questionsbtn"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/floralwhite"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        tools:text="Option 3" />
+
+    <TextView
+        android:id="@+id/tv_option_four"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/questionsbtn"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/floralwhite"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/optionfourBottom"
+        app:layout_constraintEnd_toEndOf="@id/optionfourEnd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/optionfourStart"
+        app:layout_constraintTop_toBottomOf="@id/optionfourTop"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="Option 4" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/happyanimation"
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:visibility="invisible"
+        app:lottie_rawRes="@raw/happyemoji" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/circlebtnsTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/circlesbtnsBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/questionfrmTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.11" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/questionfrmBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/questionfrmStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/questionfrmEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/counterTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/counterBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/optiononeStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/optiononeEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/optiononeTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/optiononeBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.61"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/optiontwoStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/optiontwoEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/optiontwoTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/optiontwoBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/optionthreeStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/optionthreeEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/optionthreeTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.74" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/optionthreeBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.83"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/optionfourStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/optionfourEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/optionfourTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/optionfourBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.94"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
